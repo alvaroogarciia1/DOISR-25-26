@@ -1,0 +1,106 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dig: <https://w3id.org/doisr/group3/digimon#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+owl:versionIRI a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+<https://w3id.org/doisr/group3/digimon> a owl:Ontology ;
+    dcterms:contributor <https://w3id.org/doisr/group3> ;
+    dcterms:created "2026-04-16"^^xsd:date ;
+    dcterms:creator <https://w3id.org/doisr/group3> ;
+    dcterms:description "Ontology for modeling Digimon, their stages, types, attributes, abilities and digivolution paths."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Digimon Ontology"@en ;
+    vann:preferredNamespacePrefix "dig" ;
+    vann:preferredNamespaceUri dig: ;
+    owl:versionIRI <https://w3id.org/doisr/group3/digimon/1.0.0> ;
+    owl:versionInfo "1.0.0" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+<https://w3id.org/doisr/group3/digimon#Digivolution> a owl:Class ;
+    rdfs:label "Digivolution" .
+
+<https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> a owl:Class ;
+    rdfs:label "Digivolution Requirement" .
+
+<https://w3id.org/doisr/group3/digimon#canUseMove> a owl:ObjectProperty ;
+    rdfs:label "can use move" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
+    rdfs:range <https://w3id.org/doisr/group3/digimon#Move> .
+
+<https://w3id.org/doisr/group3/digimon#hasAttribute> a owl:ObjectProperty ;
+    rdfs:label "has attribute" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
+    rdfs:range <https://w3id.org/doisr/group3/digimon#Attribute> .
+
+<https://w3id.org/doisr/group3/digimon#hasMoveType> a owl:ObjectProperty ;
+    rdfs:label "has move type" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Move> ;
+    rdfs:range <https://w3id.org/doisr/group3/digimon#MoveType> .
+
+<https://w3id.org/doisr/group3/digimon#hasStage> a owl:ObjectProperty ;
+    rdfs:label "has stage" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
+    rdfs:range <https://w3id.org/doisr/group3/digimon#Stage> .
+
+<https://w3id.org/doisr/group3/digimon#hasSupportSkill> a owl:ObjectProperty ;
+    rdfs:label "has support skill" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
+    rdfs:range <https://w3id.org/doisr/group3/digimon#SupportSkill> .
+
+<https://w3id.org/doisr/group3/digimon#hasType> a owl:ObjectProperty ;
+    rdfs:label "has type" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
+    rdfs:range <https://w3id.org/doisr/group3/digimon#DigimonType> .
+
+<https://w3id.org/doisr/group3/digimon#learnsSkill> a owl:ObjectProperty ;
+    rdfs:label "learns skill" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
+    rdfs:range <https://w3id.org/doisr/group3/digimon#Skill> .
+
+<https://w3id.org/doisr/group3/digimon#Attribute> a owl:Class ;
+    rdfs:label "Attribute" .
+
+<https://w3id.org/doisr/group3/digimon#DigimonType> a owl:Class ;
+    rdfs:label "Digimon Type" .
+
+<https://w3id.org/doisr/group3/digimon#MoveType> a owl:Class ;
+    rdfs:label "Move Type" .
+
+<https://w3id.org/doisr/group3/digimon#Skill> a owl:Class ;
+    rdfs:label "Skill" .
+
+<https://w3id.org/doisr/group3/digimon#Stage> a owl:Class ;
+    rdfs:label "Stage" .
+
+<https://w3id.org/doisr/group3/digimon#SupportSkill> a owl:Class ;
+    rdfs:label "Support Skill" .
+
+<https://w3id.org/doisr/group3/digimon#Move> a owl:Class ;
+    rdfs:label "Move" .
+
+<https://w3id.org/doisr/group3/digimon#Digimon> a owl:Class ;
+    rdfs:label "Digimon" .
+
