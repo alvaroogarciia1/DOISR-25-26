@@ -39,26 +39,115 @@ owl:versionInfo a owl:AnnotationProperty .
     owl:versionInfo "1.0.0" ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
-<https://w3id.org/doisr/group3/digimon#Digivolution> a owl:Class ;
-    rdfs:label "Digivolution" .
-
-<https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> a owl:Class ;
-    rdfs:label "Digivolution Requirement" .
-
 <https://w3id.org/doisr/group3/digimon#canUseMove> a owl:ObjectProperty ;
     rdfs:label "can use move" ;
     rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
     rdfs:range <https://w3id.org/doisr/group3/digimon#Move> .
+
+<https://w3id.org/doisr/group3/digimon#digivolvesTo> a owl:ObjectProperty ;
+    rdfs:label "digivolves to" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
+    rdfs:range <https://w3id.org/doisr/group3/digimon#Digimon> .
+
+<https://w3id.org/doisr/group3/digimon#hasAttack> a owl:DatatypeProperty ;
+    rdfs:label "has attack" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
+    rdfs:range xsd:integer .
 
 <https://w3id.org/doisr/group3/digimon#hasAttribute> a owl:ObjectProperty ;
     rdfs:label "has attribute" ;
     rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
     rdfs:range <https://w3id.org/doisr/group3/digimon#Attribute> .
 
+<https://w3id.org/doisr/group3/digimon#hasDefense> a owl:DatatypeProperty ;
+    rdfs:label "has defense" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
+    rdfs:range xsd:integer .
+
+<https://w3id.org/doisr/group3/digimon#hasHP> a owl:DatatypeProperty ;
+    rdfs:label "has h p" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
+    rdfs:range xsd:integer .
+
+<https://w3id.org/doisr/group3/digimon#hasIntelligence> a owl:DatatypeProperty ;
+    rdfs:label "has intelligence" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
+    rdfs:range xsd:integer .
+
+<https://w3id.org/doisr/group3/digimon#hasMemory> a owl:DatatypeProperty ;
+    rdfs:label "has memory" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
+    rdfs:range xsd:integer .
+
+<https://w3id.org/doisr/group3/digimon#hasMinAttack> a owl:DatatypeProperty ;
+    rdfs:label "has min attack" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> ;
+    rdfs:range xsd:integer .
+
+<https://w3id.org/doisr/group3/digimon#hasMinDefense> a owl:DatatypeProperty ;
+    rdfs:label "has min defense" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> ;
+    rdfs:range xsd:integer .
+
+<https://w3id.org/doisr/group3/digimon#hasMinHP> a owl:DatatypeProperty ;
+    rdfs:label "has min h p" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> ;
+    rdfs:range xsd:integer .
+
+<https://w3id.org/doisr/group3/digimon#hasMinIntelligence> a owl:DatatypeProperty ;
+    rdfs:label "has min intelligence" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> ;
+    rdfs:range xsd:integer .
+
+<https://w3id.org/doisr/group3/digimon#hasMinLevel> a owl:DatatypeProperty ;
+    rdfs:label "has min level" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> ;
+    rdfs:range xsd:integer .
+
+<https://w3id.org/doisr/group3/digimon#hasMinSP> a owl:DatatypeProperty ;
+    rdfs:label "has min s p" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> ;
+    rdfs:range xsd:integer .
+
+<https://w3id.org/doisr/group3/digimon#hasMinSpeed> a owl:DatatypeProperty ;
+    rdfs:label "has min speed" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> ;
+    rdfs:range xsd:integer .
+
 <https://w3id.org/doisr/group3/digimon#hasMoveType> a owl:ObjectProperty ;
     rdfs:label "has move type" ;
     rdfs:domain <https://w3id.org/doisr/group3/digimon#Move> ;
     rdfs:range <https://w3id.org/doisr/group3/digimon#MoveType> .
+
+<https://w3id.org/doisr/group3/digimon#hasPower> a owl:DatatypeProperty ;
+    rdfs:label "has power" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Move> ;
+    rdfs:range xsd:integer .
+
+<https://w3id.org/doisr/group3/digimon#hasRequirement> a owl:ObjectProperty ;
+    rdfs:label "has requirement" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digivolution> ;
+    rdfs:range <https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> .
+
+<https://w3id.org/doisr/group3/digimon#hasSP> a owl:DatatypeProperty ;
+    rdfs:label "has s p" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
+    rdfs:range xsd:integer .
+
+<https://w3id.org/doisr/group3/digimon#hasSPCost> a owl:DatatypeProperty ;
+    rdfs:label "has s p cost" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Move> ;
+    rdfs:range xsd:integer .
+
+<https://w3id.org/doisr/group3/digimon#hasSourceDigimon> a owl:ObjectProperty ;
+    rdfs:label "has source digimon" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digivolution> ;
+    rdfs:range <https://w3id.org/doisr/group3/digimon#Digimon> .
+
+<https://w3id.org/doisr/group3/digimon#hasSpeed> a owl:DatatypeProperty ;
+    rdfs:label "has speed" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
+    rdfs:range xsd:integer .
 
 <https://w3id.org/doisr/group3/digimon#hasStage> a owl:ObjectProperty ;
     rdfs:label "has stage" ;
@@ -69,6 +158,11 @@ owl:versionInfo a owl:AnnotationProperty .
     rdfs:label "has support skill" ;
     rdfs:domain <https://w3id.org/doisr/group3/digimon#Digimon> ;
     rdfs:range <https://w3id.org/doisr/group3/digimon#SupportSkill> .
+
+<https://w3id.org/doisr/group3/digimon#hasTargetDigimon> a owl:ObjectProperty ;
+    rdfs:label "has target digimon" ;
+    rdfs:domain <https://w3id.org/doisr/group3/digimon#Digivolution> ;
+    rdfs:range <https://w3id.org/doisr/group3/digimon#Digimon> .
 
 <https://w3id.org/doisr/group3/digimon#hasType> a owl:ObjectProperty ;
     rdfs:label "has type" ;
@@ -98,8 +192,14 @@ owl:versionInfo a owl:AnnotationProperty .
 <https://w3id.org/doisr/group3/digimon#SupportSkill> a owl:Class ;
     rdfs:label "Support Skill" .
 
+<https://w3id.org/doisr/group3/digimon#Digivolution> a owl:Class ;
+    rdfs:label "Digivolution" .
+
 <https://w3id.org/doisr/group3/digimon#Move> a owl:Class ;
     rdfs:label "Move" .
+
+<https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> a owl:Class ;
+    rdfs:label "Digivolution Requirement" .
 
 <https://w3id.org/doisr/group3/digimon#Digimon> a owl:Class ;
     rdfs:label "Digimon" .
