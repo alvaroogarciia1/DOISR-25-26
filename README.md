@@ -19,3 +19,13 @@ the requirements and the defined use cases.
 All ontology modeling decisions, including the definition of classes, relationships and attributes, were reviewed and validated by the authors. 
 The AI tool was used as a complementary aid to enhance consistency and quality, ensuring that the final outcome reflects the authors’ understanding of the assignment.
 
+### SHACL Validation
+
+For the SHACL Validation assignment, generative AI tools (ChatGPT Plus) were used as a support resource to assist in the design of SHACL shapes, 
+the generation of sample data and the interpretation of validation results.
+The tool helped define different types of constraints and ensured alignment between the shapes, 
+the ontology and the defined requirements and use cases.
+
+All design decisions were reviewed and validated by the authors. 
+The AI tool was used as a complementary aid to improve consistency and quality, ensuring that the final outcome reflects the authors’ understanding of the assignment.
+
