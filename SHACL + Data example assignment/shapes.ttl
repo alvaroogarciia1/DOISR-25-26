@@ -1,0 +1,342 @@
+@prefix dig: <https://w3id.org/doisr/group3/digimon#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dsh: <https://w3id.org/doisr/group3/digimon/shapes#> .
+
+#################################################################
+# SHACL shapes for the Digimon ontology
+# Group 3 - DOISR 2025-2026
+#
+# This file defines a set of SHACL shapes used to validate the
+# structure and consistency of data instances in the Digimon ontology.
+#################################################################
+
+#################################################################
+# 1. Digimon core information
+#################################################################
+
+dsh:DigimonCoreShape
+    a sh:NodeShape ;
+    rdfs:label "Digimon core shape"@en ;
+    rdfs:comment "Checks the minimum information required for each Digimon used in battle team planning and digivolution analysis."@en ;
+    sh:targetClass dig:Digimon ;
+    sh:nodeKind sh:IRI ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:minLength 1 ;
+        sh:message "Each Digimon must have exactly one non-empty rdfs:label."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasStage ;
+        sh:class dig:Stage ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Each Digimon must have exactly one stage, and it must be an instance of dig:Stage."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasType ;
+        sh:class dig:DigimonType ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Each Digimon must have exactly one type, and it must be an instance of dig:DigimonType."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasAttribute ;
+        sh:class dig:Attribute ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Each Digimon must have exactly one attribute, and it must be an instance of dig:Attribute."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasMemory ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Each Digimon must have exactly one non-negative integer memory value."@en ;
+    ] .
+
+#################################################################
+# 2. Digimon numerical statistics
+#################################################################
+
+dsh:DigimonStatsShape
+    a sh:NodeShape ;
+    rdfs:label "Digimon statistics shape"@en ;
+    rdfs:comment "Checks the base level-50 statistics used for comparison and optimisation in the battle team planning use case."@en ;
+    sh:targetClass dig:Digimon ;
+    sh:property [
+        sh:path dig:hasHP ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Each Digimon must have exactly one non-negative integer HP value."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasSP ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Each Digimon must have exactly one non-negative integer SP value."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasAttack ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Each Digimon must have exactly one non-negative integer attack value."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasDefense ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Each Digimon must have exactly one non-negative integer defense value."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasIntelligence ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Each Digimon must have exactly one non-negative integer intelligence value."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasSpeed ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Each Digimon must have exactly one non-negative integer speed value."@en ;
+    ] .
+
+#################################################################
+# 3. Battle-related abilities for Digimon
+#################################################################
+
+dsh:DigimonAbilityShape
+    a sh:NodeShape ;
+    rdfs:label "Digimon ability shape"@en ;
+    rdfs:comment "Checks that Digimon participating in the integrated graph are connected to at least one relevant ability source: moves, skills or support skills."@en ;
+    sh:targetClass dig:Digimon ;
+    sh:or (
+        [
+            sh:property [
+                sh:path dig:canUseMove ;
+                sh:class dig:Move ;
+                sh:minCount 1 ;
+            ]
+        ]
+        [
+            sh:property [
+                sh:path dig:learnsSkill ;
+                sh:class dig:Skill ;
+                sh:minCount 1 ;
+            ]
+        ]
+        [
+            sh:property [
+                sh:path dig:hasSupportSkill ;
+                sh:class dig:SupportSkill ;
+                sh:minCount 1 ;
+            ]
+        ]
+    ) ;
+    sh:message "Each Digimon must be linked to at least one move, skill or support skill."@en .
+
+#################################################################
+# 4. Move information
+#################################################################
+
+dsh:MoveShape
+    a sh:NodeShape ;
+    rdfs:label "Move shape"@en ;
+    rdfs:comment "Checks the information needed to compare and use moves in battle-oriented queries."@en ;
+    sh:targetClass dig:Move ;
+    sh:nodeKind sh:IRI ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:minLength 1 ;
+        sh:message "Each Move must have exactly one non-empty rdfs:label."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasMoveType ;
+        sh:class dig:MoveType ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Each Move must have exactly one move type, and it must be an instance of dig:MoveType."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasPower ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Each Move must have exactly one non-negative integer power value."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasSPCost ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Each Move must have exactly one non-negative integer SP cost value."@en ;
+    ] .
+
+#################################################################
+# 5. Skill and support skill labels
+#################################################################
+
+dsh:AbilityLabelShape
+    a sh:NodeShape ;
+    rdfs:label "Ability label shape"@en ;
+    rdfs:comment "Checks that skills and support skills have human-readable names."@en ;
+    sh:targetClass dig:Skill, dig:SupportSkill ;
+    sh:nodeKind sh:IRI ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:minLength 1 ;
+        sh:message "Each Skill or SupportSkill must have exactly one non-empty rdfs:label."@en ;
+    ] .
+
+#################################################################
+# 6. Digivolution relation entity
+#################################################################
+
+dsh:DigivolutionShape
+    a sh:NodeShape ;
+    rdfs:label "Digivolution shape"@en ;
+    rdfs:comment "Checks that each Digivolution entity links a source Digimon, a target Digimon and the corresponding requirements."@en ;
+    sh:targetClass dig:Digivolution ;
+    sh:nodeKind sh:IRI ;
+    sh:property [
+        sh:path dig:hasSourceDigimon ;
+        sh:class dig:Digimon ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:disjoint dig:hasTargetDigimon ;
+        sh:message "Each Digivolution must have exactly one source Digimon, different from its target Digimon."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasTargetDigimon ;
+        sh:class dig:Digimon ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Each Digivolution must have exactly one target Digimon."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasRequirement ;
+        sh:class dig:DigivolutionRequirement ;
+        sh:minCount 1 ;
+        sh:node dsh:DigivolutionRequirementShape ;
+        sh:message "Each Digivolution must be linked to at least one valid DigivolutionRequirement."@en ;
+    ] .
+
+#################################################################
+# 7. Digivolution requirement values
+#################################################################
+
+dsh:DigivolutionRequirementShape
+    a sh:NodeShape ;
+    rdfs:label "Digivolution requirement shape"@en ;
+    rdfs:comment "Checks the numerical requirements needed to evaluate feasible digivolution paths."@en ;
+    sh:targetClass dig:DigivolutionRequirement ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type rdfs:label ) ;
+    sh:property [
+        sh:path dig:hasMinLevel ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:maxCount 1 ;
+        sh:message "Minimum level must be a non-negative integer when present."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasMinHP ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:maxCount 1 ;
+        sh:message "Minimum HP must be a non-negative integer when present."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasMinSP ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:maxCount 1 ;
+        sh:message "Minimum SP must be a non-negative integer when present."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasMinAttack ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:maxCount 1 ;
+        sh:message "Minimum attack must be a non-negative integer when present."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasMinDefense ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:maxCount 1 ;
+        sh:message "Minimum defense must be a non-negative integer when present."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasMinIntelligence ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:maxCount 1 ;
+        sh:message "Minimum intelligence must be a non-negative integer when present."@en ;
+    ] ;
+    sh:property [
+        sh:path dig:hasMinSpeed ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 0 ;
+        sh:maxCount 1 ;
+        sh:message "Minimum speed must be a non-negative integer when present."@en ;
+    ] .
+
+#################################################################
+# 8. Requirements must be attached to a Digivolution
+#################################################################
+
+dsh:RequirementUsageShape
+    a sh:NodeShape ;
+    rdfs:label "Requirement usage shape"@en ;
+    rdfs:comment "Checks that every DigivolutionRequirement is actually used by at least one Digivolution entity."@en ;
+    sh:targetClass dig:DigivolutionRequirement ;
+    sh:property [
+        sh:path [ sh:inversePath dig:hasRequirement ] ;
+        sh:class dig:Digivolution ;
+        sh:minCount 1 ;
+        sh:message "Each DigivolutionRequirement must be linked from at least one Digivolution through dig:hasRequirement."@en ;
+    ] .
+
+#################################################################
+# 9. Direct digivolvesTo shortcut relation
+#################################################################
+
+dsh:DigivolvesToShape
+    a sh:NodeShape ;
+    rdfs:label "Direct digivolvesTo shape"@en ;
+    rdfs:comment "Checks the direct shortcut relation used to query evolution chains."@en ;
+    sh:targetSubjectsOf dig:digivolvesTo ;
+    sh:class dig:Digimon ;
+    sh:property [
+        sh:path dig:digivolvesTo ;
+        sh:class dig:Digimon ;
+        sh:minCount 1 ;
+        sh:message "Every subject and object of dig:digivolvesTo must be a Digimon."@en ;
+    ] .

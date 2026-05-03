@@ -1,0 +1,257 @@
+@prefix dig: <https://w3id.org/doisr/group3/digimon#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+#################################################################
+# Sample data for SHACL validation of the Digimon ontology
+# Group 3 - DOISR 2025-2026
+#
+# This file contains:
+# 1. Valid examples, expected to conform to the shapes;
+# 2. Invalid examples, expected to produce validation violations.
+#################################################################
+
+#################################################################
+# Controlled values used by the sample data
+#################################################################
+
+dig:Rookie
+    a dig:Stage ;
+    rdfs:label "Rookie" .
+
+dig:Champion
+    a dig:Stage ;
+    rdfs:label "Champion" .
+
+dig:Vaccine
+    a dig:DigimonType ;
+    rdfs:label "Vaccine" .
+
+dig:Virus
+    a dig:DigimonType ;
+    rdfs:label "Virus" .
+
+dig:Data
+    a dig:Attribute ;
+    rdfs:label "Data" .
+
+dig:Fire
+    a dig:Attribute ;
+    rdfs:label "Fire" .
+
+dig:Physical
+    a dig:MoveType ;
+    rdfs:label "Physical" .
+
+dig:Magic
+    a dig:MoveType ;
+    rdfs:label "Magic" .
+
+#################################################################
+# Valid abilities and moves
+#################################################################
+
+dig:PepperBreath
+    a dig:Move ;
+    rdfs:label "Pepper Breath" ;
+    dig:hasMoveType dig:Magic ;
+    dig:hasPower 65 ;
+    dig:hasSPCost 5 .
+
+dig:MegaFlame
+    a dig:Move ;
+    rdfs:label "Mega Flame" ;
+    dig:hasMoveType dig:Magic ;
+    dig:hasPower 95 ;
+    dig:hasSPCost 10 .
+
+dig:BabyFlame
+    a dig:Skill ;
+    rdfs:label "Baby Flame" .
+
+dig:AttackCharge
+    a dig:SupportSkill ;
+    rdfs:label "Attack Charge" .
+
+#################################################################
+# Valid Digimon instances
+#################################################################
+
+dig:Agumon
+    a dig:Digimon ;
+    rdfs:label "Agumon" ;
+    dig:hasStage dig:Rookie ;
+    dig:hasType dig:Vaccine ;
+    dig:hasAttribute dig:Fire ;
+    dig:hasMemory 5 ;
+    dig:hasHP 530 ;
+    dig:hasSP 59 ;
+    dig:hasAttack 131 ;
+    dig:hasDefense 80 ;
+    dig:hasIntelligence 70 ;
+    dig:hasSpeed 85 ;
+    dig:canUseMove dig:PepperBreath ;
+    dig:learnsSkill dig:BabyFlame .
+
+dig:Greymon
+    a dig:Digimon ;
+    rdfs:label "Greymon" ;
+    dig:hasStage dig:Champion ;
+    dig:hasType dig:Vaccine ;
+    dig:hasAttribute dig:Fire ;
+    dig:hasMemory 8 ;
+    dig:hasHP 700 ;
+    dig:hasSP 70 ;
+    dig:hasAttack 170 ;
+    dig:hasDefense 115 ;
+    dig:hasIntelligence 85 ;
+    dig:hasSpeed 95 ;
+    dig:canUseMove dig:MegaFlame ;
+    dig:hasSupportSkill dig:AttackCharge .
+
+#################################################################
+# Valid digivolution and requirement
+#################################################################
+
+dig:AgumonToGreymon
+    a dig:Digivolution ;
+    dig:hasSourceDigimon dig:Agumon ;
+    dig:hasTargetDigimon dig:Greymon ;
+    dig:hasRequirement dig:ReqAgumonToGreymon .
+
+dig:ReqAgumonToGreymon
+    a dig:DigivolutionRequirement ;
+    rdfs:label "Requirements for Agumon to Greymon" ;
+    dig:hasMinLevel 16 ;
+    dig:hasMinHP 150 ;
+    dig:hasMinAttack 55 ;
+    dig:hasMinDefense 40 ;
+    dig:hasMinIntelligence 20 ;
+    dig:hasMinSpeed 25 .
+
+dig:Agumon
+    dig:digivolvesTo dig:Greymon .
+
+#################################################################
+# Invalid Digimon examples
+#################################################################
+
+# Violates DigimonCoreShape and DigimonStatsShape:
+# - empty label;
+# - hasType points to a literal instead of an instance of dig:DigimonType;
+# - missing hasAttribute;
+# - negative memory;
+# - HP is not an integer;
+# - negative SP;
+# - missing hasAttack;
+# - negative hasDefense.
+dig:Brokenmon
+    a dig:Digimon ;
+    rdfs:label "" ;
+    dig:hasStage dig:Rookie ;
+    dig:hasType "Virus" ;
+    dig:hasMemory -1 ;
+    dig:hasHP "high" ;
+    dig:hasSP -10 ;
+    dig:hasDefense -5 ;
+    dig:hasIntelligence 40 ;
+    dig:hasSpeed 30 ;
+    dig:canUseMove dig:PepperBreath .
+
+# Violates DigimonAbilityShape:
+# the Digimon has valid core data and stats, but no move, skill or support skill.
+dig:NoAbilitymon
+    a dig:Digimon ;
+    rdfs:label "NoAbilitymon" ;
+    dig:hasStage dig:Rookie ;
+    dig:hasType dig:Virus ;
+    dig:hasAttribute dig:Data ;
+    dig:hasMemory 4 ;
+    dig:hasHP 400 ;
+    dig:hasSP 45 ;
+    dig:hasAttack 70 ;
+    dig:hasDefense 65 ;
+    dig:hasIntelligence 55 ;
+    dig:hasSpeed 60 .
+
+#################################################################
+# Invalid move and ability examples
+#################################################################
+
+# Violates MoveShape:
+# - missing rdfs:label;
+# - hasMoveType points to a DigimonType instead of a MoveType;
+# - negative power;
+# - SP cost is not an integer.
+dig:BrokenMove
+    a dig:Move ;
+    dig:hasMoveType dig:Vaccine ;
+    dig:hasPower -20 ;
+    dig:hasSPCost "many" .
+
+# Violates AbilityLabelShape:
+# Skill labels must be non-empty strings.
+dig:EmptySkill
+    a dig:Skill ;
+    rdfs:label "" .
+
+#################################################################
+# Invalid digivolution and requirement examples
+#################################################################
+
+# Violates DigivolutionShape:
+# - source and target are the same Digimon;
+# - linked requirement contains invalid values.
+dig:InvalidSelfDigivolution
+    a dig:Digivolution ;
+    dig:hasSourceDigimon dig:Agumon ;
+    dig:hasTargetDigimon dig:Agumon ;
+    dig:hasRequirement dig:InvalidRequirement .
+
+# Violates DigivolutionRequirementShape:
+# - hasMinLevel is negative;
+# - hasMinHP is not an integer;
+# - hasMinSP is negative;
+# - hasMinAttack appears twice;
+# - rdfs:comment is not allowed because the shape is closed.
+dig:InvalidRequirement
+    a dig:DigivolutionRequirement ;
+    rdfs:label "Invalid requirement" ;
+    rdfs:comment "This property is intentionally not allowed by the closed shape." ;
+    dig:hasMinLevel -5 ;
+    dig:hasMinHP "a lot" ;
+    dig:hasMinSP -1 ;
+    dig:hasMinAttack 50, 60 ;
+    dig:hasMinDefense 30 ;
+    dig:hasMinIntelligence 20 ;
+    dig:hasMinSpeed 15 .
+
+# Violates RequirementUsageShape:
+# this requirement is not linked from any dig:Digivolution by dig:hasRequirement.
+dig:OrphanRequirement
+    a dig:DigivolutionRequirement ;
+    rdfs:label "Orphan requirement" ;
+    dig:hasMinLevel 20 ;
+    dig:hasMinAttack 80 .
+
+#################################################################
+# Invalid direct digivolvesTo examples
+#################################################################
+
+# Violates DigivolvesToShape:
+# the object of dig:digivolvesTo is not typed as dig:Digimon.
+dig:Agumon
+    dig:digivolvesTo dig:NotADigimon .
+
+dig:NotADigimon
+    a dig:Move ;
+    rdfs:label "This resource is not a Digimon" ;
+    dig:hasMoveType dig:Physical ;
+    dig:hasPower 10 ;
+    dig:hasSPCost 1 .
+
+# Violates DigivolvesToShape:
+# the subject of dig:digivolvesTo is not typed as dig:Digimon.
+dig:UnknownSource
+    dig:digivolvesTo dig:Greymon .

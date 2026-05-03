@@ -1,0 +1,263 @@
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+	sh:sourceShape _:n313 ;
+	sh:focusNode dig:Agumon ;
+	sh:value dig:NotADigimon ;
+	sh:resultPath dig:digivolvesTo ;
+	sh:resultMessage "Every subject and object of dig:digivolvesTo must be a Digimon."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+	sh:sourceShape dsh:DigivolvesToShape ;
+	sh:focusNode dig:UnknownSource ;
+	sh:value dig:UnknownSource ;
+	sh:resultMessage "Value does not have class dig:Digimon" ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:ClosedConstraintComponent ;
+	sh:sourceShape dsh:DigivolutionRequirementShape ;
+	sh:focusNode dig:InvalidRequirement ;
+	sh:resultPath rdfs:comment ;
+	sh:value "This property is intentionally not allowed by the closed shape." ;
+	sh:resultMessage "Predicate is not allowed (closed shape)" ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent ;
+	sh:sourceShape _:n304 ;
+	sh:focusNode dig:InvalidRequirement ;
+	sh:value -5 ;
+	sh:resultPath dig:hasMinLevel ;
+	sh:resultMessage "Minimum level must be a non-negative integer when present."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+	sh:sourceShape _:n305 ;
+	sh:focusNode dig:InvalidRequirement ;
+	sh:value "a lot" ;
+	sh:resultPath dig:hasMinHP ;
+	sh:resultMessage "Minimum HP must be a non-negative integer when present."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent ;
+	sh:sourceShape _:n305 ;
+	sh:focusNode dig:InvalidRequirement ;
+	sh:value "a lot" ;
+	sh:resultPath dig:hasMinHP ;
+	sh:resultMessage "Minimum HP must be a non-negative integer when present."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent ;
+	sh:sourceShape _:n306 ;
+	sh:focusNode dig:InvalidRequirement ;
+	sh:value -1 ;
+	sh:resultPath dig:hasMinSP ;
+	sh:resultMessage "Minimum SP must be a non-negative integer when present."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+	sh:sourceShape _:n307 ;
+	sh:focusNode dig:InvalidRequirement ;
+	sh:resultPath dig:hasMinAttack ;
+	sh:resultMessage "Minimum attack must be a non-negative integer when present."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinLengthConstraintComponent ;
+	sh:sourceShape _:n277 ;
+	sh:focusNode dig:Brokenmon ;
+	sh:value "" ;
+	sh:resultPath rdfs:label ;
+	sh:resultMessage "Each Digimon must have exactly one non-empty rdfs:label."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+	sh:sourceShape _:n279 ;
+	sh:focusNode dig:Brokenmon ;
+	sh:value "Virus" ;
+	sh:resultPath dig:hasType ;
+	sh:resultMessage "Each Digimon must have exactly one type, and it must be an instance of dig:DigimonType."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+	sh:sourceShape _:n280 ;
+	sh:focusNode dig:Brokenmon ;
+	sh:resultPath dig:hasAttribute ;
+	sh:resultMessage "Each Digimon must have exactly one attribute, and it must be an instance of dig:Attribute."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent ;
+	sh:sourceShape _:n281 ;
+	sh:focusNode dig:Brokenmon ;
+	sh:value -1 ;
+	sh:resultPath dig:hasMemory ;
+	sh:resultMessage "Each Digimon must have exactly one non-negative integer memory value."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+	sh:sourceShape _:n295 ;
+	sh:focusNode dig:BrokenMove ;
+	sh:resultPath rdfs:label ;
+	sh:resultMessage "Each Move must have exactly one non-empty rdfs:label."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+	sh:sourceShape _:n296 ;
+	sh:focusNode dig:BrokenMove ;
+	sh:value dig:Vaccine ;
+	sh:resultPath dig:hasMoveType ;
+	sh:resultMessage "Each Move must have exactly one move type, and it must be an instance of dig:MoveType."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent ;
+	sh:sourceShape _:n297 ;
+	sh:focusNode dig:BrokenMove ;
+	sh:value -20 ;
+	sh:resultPath dig:hasPower ;
+	sh:resultMessage "Each Move must have exactly one non-negative integer power value."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+	sh:sourceShape _:n298 ;
+	sh:focusNode dig:BrokenMove ;
+	sh:value "many" ;
+	sh:resultPath dig:hasSPCost ;
+	sh:resultMessage "Each Move must have exactly one non-negative integer SP cost value."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent ;
+	sh:sourceShape _:n298 ;
+	sh:focusNode dig:BrokenMove ;
+	sh:value "many" ;
+	sh:resultPath dig:hasSPCost ;
+	sh:resultMessage "Each Move must have exactly one non-negative integer SP cost value."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinLengthConstraintComponent ;
+	sh:sourceShape _:n299 ;
+	sh:focusNode dig:EmptySkill ;
+	sh:value "" ;
+	sh:resultPath rdfs:label ;
+	sh:resultMessage "Each Skill or SupportSkill must have exactly one non-empty rdfs:label."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:DisjointConstraintComponent ;
+	sh:sourceShape _:n300 ;
+	sh:focusNode dig:InvalidSelfDigivolution ;
+	sh:value dig:Agumon ;
+	sh:resultPath dig:hasSourceDigimon ;
+	sh:resultMessage "Each Digivolution must have exactly one source Digimon, different from its target Digimon."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+	sh:sourceShape _:n302 ;
+	sh:focusNode dig:InvalidSelfDigivolution ;
+	sh:value dig:InvalidRequirement ;
+	sh:resultPath dig:hasRequirement ;
+	sh:resultMessage "Each Digivolution must be linked to at least one valid DigivolutionRequirement."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:OrConstraintComponent ;
+	sh:sourceShape dsh:DigimonAbilityShape ;
+	sh:focusNode dig:NoAbilitymon ;
+	sh:value dig:NoAbilitymon ;
+	sh:resultMessage "Each Digimon must be linked to at least one move, skill or support skill."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+	sh:sourceShape _:n282 ;
+	sh:focusNode dig:Brokenmon ;
+	sh:value "high" ;
+	sh:resultPath dig:hasHP ;
+	sh:resultMessage "Each Digimon must have exactly one non-negative integer HP value."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent ;
+	sh:sourceShape _:n282 ;
+	sh:focusNode dig:Brokenmon ;
+	sh:value "high" ;
+	sh:resultPath dig:hasHP ;
+	sh:resultMessage "Each Digimon must have exactly one non-negative integer HP value."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent ;
+	sh:sourceShape _:n283 ;
+	sh:focusNode dig:Brokenmon ;
+	sh:value -10 ;
+	sh:resultPath dig:hasSP ;
+	sh:resultMessage "Each Digimon must have exactly one non-negative integer SP value."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+	sh:sourceShape _:n284 ;
+	sh:focusNode dig:Brokenmon ;
+	sh:resultPath dig:hasAttack ;
+	sh:resultMessage "Each Digimon must have exactly one non-negative integer attack value."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent ;
+	sh:sourceShape _:n285 ;
+	sh:focusNode dig:Brokenmon ;
+	sh:value -5 ;
+	sh:resultPath dig:hasDefense ;
+	sh:resultMessage "Each Digimon must have exactly one non-negative integer defense value."@en ;
+] .
+[
+	a sh:ValidationResult ;
+	sh:resultSeverity sh:Violation ;
+	sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+	sh:sourceShape _:n311 ;
+	sh:focusNode dig:OrphanRequirement ;
+	sh:resultPath _:n312 ;
+	sh:resultMessage "Each DigivolutionRequirement must be linked from at least one Digivolution through dig:hasRequirement."@en ;
+] .
