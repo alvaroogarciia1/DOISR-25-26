@@ -1,0 +1,351 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/shacl#class
+<http://www.w3.org/ns/shacl#class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#closed
+<http://www.w3.org/ns/shacl#closed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#datatype
+<http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#disjoint
+<http://www.w3.org/ns/shacl#disjoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#ignoredProperties
+<http://www.w3.org/ns/shacl#ignoredProperties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#inversePath
+<http://www.w3.org/ns/shacl#inversePath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#maxCount
+<http://www.w3.org/ns/shacl#maxCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#message
+<http://www.w3.org/ns/shacl#message> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#minCount
+<http://www.w3.org/ns/shacl#minCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#minInclusive
+<http://www.w3.org/ns/shacl#minInclusive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#minLength
+<http://www.w3.org/ns/shacl#minLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#node
+<http://www.w3.org/ns/shacl#node> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#nodeKind
+<http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#or
+<http://www.w3.org/ns/shacl#or> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#path
+<http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#property
+<http://www.w3.org/ns/shacl#property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#targetClass
+<http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#targetSubjectsOf
+<http://www.w3.org/ns/shacl#targetSubjectsOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/shacl#NodeShape
+<http://www.w3.org/ns/shacl#NodeShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/doisr/group3/digimon/shapes#AbilityLabelShape
+<https://w3id.org/doisr/group3/digimon/shapes#AbilityLabelShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/doisr/group3/digimon/shapes#AbilityLabelShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://w3id.org/doisr/group3/digimon/shapes#AbilityLabelShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Checks that skills and support skills have human-readable names."@en .
+<https://w3id.org/doisr/group3/digimon/shapes#AbilityLabelShape> <http://www.w3.org/2000/01/rdf-schema#label> "Ability label shape"@en .
+<https://w3id.org/doisr/group3/digimon/shapes#AbilityLabelShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://w3id.org/doisr/group3/digimon/shapes#AbilityLabelShape> <http://www.w3.org/ns/shacl#property> _:genid2 .
+_:genid2 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#label> .
+_:genid2 <http://www.w3.org/ns/shacl#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid2 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid2 <http://www.w3.org/ns/shacl#message> "Each Skill or SupportSkill must have exactly one non-empty rdfs:label."@en .
+_:genid2 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid2 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/doisr/group3/digimon/shapes#AbilityLabelShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/doisr/group3/digimon#Skill> .
+<https://w3id.org/doisr/group3/digimon/shapes#AbilityLabelShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/doisr/group3/digimon#SupportSkill> .
+# 
+# https://w3id.org/doisr/group3/digimon/shapes#DigimonAbilityShape
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonAbilityShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonAbilityShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonAbilityShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Checks that Digimon participating in the integrated graph are connected to at least one relevant ability source: moves, skills or support skills."@en .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonAbilityShape> <http://www.w3.org/2000/01/rdf-schema#label> "Digimon ability shape"@en .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonAbilityShape> <http://www.w3.org/ns/shacl#message> "Each Digimon must be linked to at least one move, skill or support skill."@en .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonAbilityShape> <http://www.w3.org/ns/shacl#or> _:genid3 .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonAbilityShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/doisr/group3/digimon#Digimon> .
+# 
+# https://w3id.org/doisr/group3/digimon/shapes#DigimonCoreShape
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonCoreShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonCoreShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonCoreShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Checks the minimum information required for each Digimon used in battle team planning and digivolution analysis."@en .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonCoreShape> <http://www.w3.org/2000/01/rdf-schema#label> "Digimon core shape"@en .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonCoreShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonCoreShape> <http://www.w3.org/ns/shacl#property> _:genid4 .
+_:genid4 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasAttribute> .
+_:genid4 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid4 <http://www.w3.org/ns/shacl#message> "Each Digimon must have exactly one attribute, and it must be an instance of dig:Attribute."@en .
+_:genid4 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid4 <http://www.w3.org/ns/shacl#class> <https://w3id.org/doisr/group3/digimon#Attribute> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonCoreShape> <http://www.w3.org/ns/shacl#property> _:genid5 .
+_:genid5 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasMemory> .
+_:genid5 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid5 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid5 <http://www.w3.org/ns/shacl#message> "Each Digimon must have exactly one non-negative integer memory value."@en .
+_:genid5 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid5 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonCoreShape> <http://www.w3.org/ns/shacl#property> _:genid6 .
+_:genid6 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#label> .
+_:genid6 <http://www.w3.org/ns/shacl#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid6 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid6 <http://www.w3.org/ns/shacl#message> "Each Digimon must have exactly one non-empty rdfs:label."@en .
+_:genid6 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid6 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonCoreShape> <http://www.w3.org/ns/shacl#property> _:genid7 .
+_:genid7 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasStage> .
+_:genid7 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid7 <http://www.w3.org/ns/shacl#message> "Each Digimon must have exactly one stage, and it must be an instance of dig:Stage."@en .
+_:genid7 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid7 <http://www.w3.org/ns/shacl#class> <https://w3id.org/doisr/group3/digimon#Stage> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonCoreShape> <http://www.w3.org/ns/shacl#property> _:genid8 .
+_:genid8 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasType> .
+_:genid8 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid8 <http://www.w3.org/ns/shacl#message> "Each Digimon must have exactly one type, and it must be an instance of dig:DigimonType."@en .
+_:genid8 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid8 <http://www.w3.org/ns/shacl#class> <https://w3id.org/doisr/group3/digimon#DigimonType> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonCoreShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/doisr/group3/digimon#Digimon> .
+# 
+# https://w3id.org/doisr/group3/digimon/shapes#DigimonStatsShape
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonStatsShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonStatsShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonStatsShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Checks the base level-50 statistics used for comparison and optimisation in the battle team planning use case."@en .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonStatsShape> <http://www.w3.org/2000/01/rdf-schema#label> "Digimon statistics shape"@en .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonStatsShape> <http://www.w3.org/ns/shacl#property> _:genid9 .
+_:genid9 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasHP> .
+_:genid9 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid9 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid9 <http://www.w3.org/ns/shacl#message> "Each Digimon must have exactly one non-negative integer HP value."@en .
+_:genid9 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid9 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonStatsShape> <http://www.w3.org/ns/shacl#property> _:genid10 .
+_:genid10 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasSP> .
+_:genid10 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid10 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid10 <http://www.w3.org/ns/shacl#message> "Each Digimon must have exactly one non-negative integer SP value."@en .
+_:genid10 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid10 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonStatsShape> <http://www.w3.org/ns/shacl#property> _:genid11 .
+_:genid11 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasAttack> .
+_:genid11 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid11 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid11 <http://www.w3.org/ns/shacl#message> "Each Digimon must have exactly one non-negative integer attack value."@en .
+_:genid11 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid11 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonStatsShape> <http://www.w3.org/ns/shacl#property> _:genid12 .
+_:genid12 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasDefense> .
+_:genid12 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid12 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid12 <http://www.w3.org/ns/shacl#message> "Each Digimon must have exactly one non-negative integer defense value."@en .
+_:genid12 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid12 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonStatsShape> <http://www.w3.org/ns/shacl#property> _:genid13 .
+_:genid13 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasIntelligence> .
+_:genid13 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid13 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid13 <http://www.w3.org/ns/shacl#message> "Each Digimon must have exactly one non-negative integer intelligence value."@en .
+_:genid13 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid13 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonStatsShape> <http://www.w3.org/ns/shacl#property> _:genid14 .
+_:genid14 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasSpeed> .
+_:genid14 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid14 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid14 <http://www.w3.org/ns/shacl#message> "Each Digimon must have exactly one non-negative integer speed value."@en .
+_:genid14 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid14 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigimonStatsShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/doisr/group3/digimon#Digimon> .
+# 
+# https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Checks the numerical requirements needed to evaluate feasible digivolution paths."@en .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape> <http://www.w3.org/2000/01/rdf-schema#label> "Digivolution requirement shape"@en .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape> <http://www.w3.org/ns/shacl#closed> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape> <http://www.w3.org/ns/shacl#ignoredProperties> _:genid15 .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape> <http://www.w3.org/ns/shacl#property> _:genid16 .
+_:genid16 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasMinLevel> .
+_:genid16 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid16 <http://www.w3.org/ns/shacl#message> "Minimum level must be a non-negative integer when present."@en .
+_:genid16 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid16 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape> <http://www.w3.org/ns/shacl#property> _:genid17 .
+_:genid17 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasMinHP> .
+_:genid17 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid17 <http://www.w3.org/ns/shacl#message> "Minimum HP must be a non-negative integer when present."@en .
+_:genid17 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid17 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape> <http://www.w3.org/ns/shacl#property> _:genid18 .
+_:genid18 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasMinSP> .
+_:genid18 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid18 <http://www.w3.org/ns/shacl#message> "Minimum SP must be a non-negative integer when present."@en .
+_:genid18 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid18 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape> <http://www.w3.org/ns/shacl#property> _:genid19 .
+_:genid19 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasMinAttack> .
+_:genid19 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid19 <http://www.w3.org/ns/shacl#message> "Minimum attack must be a non-negative integer when present."@en .
+_:genid19 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid19 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape> <http://www.w3.org/ns/shacl#property> _:genid20 .
+_:genid20 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasMinDefense> .
+_:genid20 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid20 <http://www.w3.org/ns/shacl#message> "Minimum defense must be a non-negative integer when present."@en .
+_:genid20 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid20 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape> <http://www.w3.org/ns/shacl#property> _:genid21 .
+_:genid21 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasMinIntelligence> .
+_:genid21 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid21 <http://www.w3.org/ns/shacl#message> "Minimum intelligence must be a non-negative integer when present."@en .
+_:genid21 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid21 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape> <http://www.w3.org/ns/shacl#property> _:genid22 .
+_:genid22 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasMinSpeed> .
+_:genid22 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid22 <http://www.w3.org/ns/shacl#message> "Minimum speed must be a non-negative integer when present."@en .
+_:genid22 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid22 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> .
+# 
+# https://w3id.org/doisr/group3/digimon/shapes#DigivolutionShape
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Checks that each Digivolution entity links a source Digimon, a target Digimon and the corresponding requirements."@en .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionShape> <http://www.w3.org/2000/01/rdf-schema#label> "Digivolution shape"@en .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionShape> <http://www.w3.org/ns/shacl#property> _:genid23 .
+_:genid23 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasSourceDigimon> .
+_:genid23 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid23 <http://www.w3.org/ns/shacl#message> "Each Digivolution must have exactly one source Digimon, different from its target Digimon."@en .
+_:genid23 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid23 <http://www.w3.org/ns/shacl#disjoint> <https://w3id.org/doisr/group3/digimon#hasTargetDigimon> .
+_:genid23 <http://www.w3.org/ns/shacl#class> <https://w3id.org/doisr/group3/digimon#Digimon> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionShape> <http://www.w3.org/ns/shacl#property> _:genid24 .
+_:genid24 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasTargetDigimon> .
+_:genid24 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid24 <http://www.w3.org/ns/shacl#message> "Each Digivolution must have exactly one target Digimon."@en .
+_:genid24 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid24 <http://www.w3.org/ns/shacl#class> <https://w3id.org/doisr/group3/digimon#Digimon> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionShape> <http://www.w3.org/ns/shacl#property> _:genid25 .
+_:genid25 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasRequirement> .
+_:genid25 <http://www.w3.org/ns/shacl#node> <https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape> .
+_:genid25 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid25 <http://www.w3.org/ns/shacl#message> "Each Digivolution must be linked to at least one valid DigivolutionRequirement."@en .
+_:genid25 <http://www.w3.org/ns/shacl#class> <https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolutionShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/doisr/group3/digimon#Digivolution> .
+# 
+# https://w3id.org/doisr/group3/digimon/shapes#DigivolvesToShape
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolvesToShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolvesToShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolvesToShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Checks the direct shortcut relation used to query evolution chains."@en .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolvesToShape> <http://www.w3.org/2000/01/rdf-schema#label> "Direct digivolvesTo shape"@en .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolvesToShape> <http://www.w3.org/ns/shacl#class> <https://w3id.org/doisr/group3/digimon#Digimon> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolvesToShape> <http://www.w3.org/ns/shacl#property> _:genid26 .
+_:genid26 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#digivolvesTo> .
+_:genid26 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid26 <http://www.w3.org/ns/shacl#message> "Every subject and object of dig:digivolvesTo must be a Digimon."@en .
+_:genid26 <http://www.w3.org/ns/shacl#class> <https://w3id.org/doisr/group3/digimon#Digimon> .
+<https://w3id.org/doisr/group3/digimon/shapes#DigivolvesToShape> <http://www.w3.org/ns/shacl#targetSubjectsOf> <https://w3id.org/doisr/group3/digimon#digivolvesTo> .
+# 
+# https://w3id.org/doisr/group3/digimon/shapes#MoveShape
+<https://w3id.org/doisr/group3/digimon/shapes#MoveShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/doisr/group3/digimon/shapes#MoveShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://w3id.org/doisr/group3/digimon/shapes#MoveShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Checks the information needed to compare and use moves in battle-oriented queries."@en .
+<https://w3id.org/doisr/group3/digimon/shapes#MoveShape> <http://www.w3.org/2000/01/rdf-schema#label> "Move shape"@en .
+<https://w3id.org/doisr/group3/digimon/shapes#MoveShape> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://w3id.org/doisr/group3/digimon/shapes#MoveShape> <http://www.w3.org/ns/shacl#property> _:genid27 .
+_:genid27 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#label> .
+_:genid27 <http://www.w3.org/ns/shacl#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid27 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid27 <http://www.w3.org/ns/shacl#message> "Each Move must have exactly one non-empty rdfs:label."@en .
+_:genid27 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid27 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/doisr/group3/digimon/shapes#MoveShape> <http://www.w3.org/ns/shacl#property> _:genid28 .
+_:genid28 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasMoveType> .
+_:genid28 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid28 <http://www.w3.org/ns/shacl#message> "Each Move must have exactly one move type, and it must be an instance of dig:MoveType."@en .
+_:genid28 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid28 <http://www.w3.org/ns/shacl#class> <https://w3id.org/doisr/group3/digimon#MoveType> .
+<https://w3id.org/doisr/group3/digimon/shapes#MoveShape> <http://www.w3.org/ns/shacl#property> _:genid29 .
+_:genid29 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasPower> .
+_:genid29 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid29 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid29 <http://www.w3.org/ns/shacl#message> "Each Move must have exactly one non-negative integer power value."@en .
+_:genid29 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid29 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/doisr/group3/digimon/shapes#MoveShape> <http://www.w3.org/ns/shacl#property> _:genid30 .
+_:genid30 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasSPCost> .
+_:genid30 <http://www.w3.org/ns/shacl#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid30 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid30 <http://www.w3.org/ns/shacl#message> "Each Move must have exactly one non-negative integer SP cost value."@en .
+_:genid30 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid30 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/doisr/group3/digimon/shapes#MoveShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/doisr/group3/digimon#Move> .
+# 
+# https://w3id.org/doisr/group3/digimon/shapes#RequirementUsageShape
+<https://w3id.org/doisr/group3/digimon/shapes#RequirementUsageShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/doisr/group3/digimon/shapes#RequirementUsageShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://w3id.org/doisr/group3/digimon/shapes#RequirementUsageShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Checks that every DigivolutionRequirement is actually used by at least one Digivolution entity."@en .
+<https://w3id.org/doisr/group3/digimon/shapes#RequirementUsageShape> <http://www.w3.org/2000/01/rdf-schema#label> "Requirement usage shape"@en .
+<https://w3id.org/doisr/group3/digimon/shapes#RequirementUsageShape> <http://www.w3.org/ns/shacl#property> _:genid31 .
+_:genid31 <http://www.w3.org/ns/shacl#path> _:genid32 .
+_:genid32 <http://www.w3.org/ns/shacl#inversePath> <https://w3id.org/doisr/group3/digimon#hasRequirement> .
+_:genid31 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid31 <http://www.w3.org/ns/shacl#message> "Each DigivolutionRequirement must be linked from at least one Digivolution through dig:hasRequirement."@en .
+_:genid31 <http://www.w3.org/ns/shacl#class> <https://w3id.org/doisr/group3/digimon#Digivolution> .
+<https://w3id.org/doisr/group3/digimon/shapes#RequirementUsageShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> .
+# 
+_:genid33 <http://www.w3.org/ns/shacl#property> _:genid34 .
+_:genid34 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#hasSupportSkill> .
+_:genid34 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid34 <http://www.w3.org/ns/shacl#class> <https://w3id.org/doisr/group3/digimon#SupportSkill> .
+_:genid35 <http://www.w3.org/ns/shacl#property> _:genid36 .
+_:genid36 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#learnsSkill> .
+_:genid36 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid36 <http://www.w3.org/ns/shacl#class> <https://w3id.org/doisr/group3/digimon#Skill> .
+_:genid37 <http://www.w3.org/ns/shacl#property> _:genid38 .
+_:genid38 <http://www.w3.org/ns/shacl#path> <https://w3id.org/doisr/group3/digimon#canUseMove> .
+_:genid38 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid38 <http://www.w3.org/ns/shacl#class> <https://w3id.org/doisr/group3/digimon#Move> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
