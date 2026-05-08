@@ -1,0 +1,55 @@
+{
+  "@context" : {
+    "message" : {
+      "@id" : "http://www.w3.org/ns/shacl#message"
+    },
+    "targetClass" : {
+      "@id" : "http://www.w3.org/ns/shacl#targetClass"
+    },
+    "class" : {
+      "@id" : "http://www.w3.org/ns/shacl#class"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "targetSubjectsOf" : {
+      "@id" : "http://www.w3.org/ns/shacl#targetSubjectsOf"
+    },
+    "path" : {
+      "@id" : "http://www.w3.org/ns/shacl#path"
+    },
+    "nodeKind" : {
+      "@id" : "http://www.w3.org/ns/shacl#nodeKind"
+    },
+    "closed" : {
+      "@id" : "http://www.w3.org/ns/shacl#closed"
+    },
+    "or" : {
+      "@id" : "http://www.w3.org/ns/shacl#or"
+    },
+    "property" : {
+      "@id" : "http://www.w3.org/ns/shacl#property"
+    },
+    "disjoint" : {
+      "@id" : "http://www.w3.org/ns/shacl#disjoint"
+    },
+    "inversePath" : {
+      "@id" : "http://www.w3.org/ns/shacl#inversePath"
+    },
+    "NodeShape" : {
+      "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+    },
+    "datatype" : {
+      "@id" : "http://www.w3.org/ns/shacl#datatype"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "ignoredProperties" : {
+      "@id" : "http://www.w3.org/ns/shacl#ignoredProperties"
+    },
+    "node" : {
+      "@id" : "http://www.w3.org/ns/shacl#node"
+    }
+  }
+}

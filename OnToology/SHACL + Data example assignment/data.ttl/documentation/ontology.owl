@@ -1,0 +1,644 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:digimon="https://w3id.org/doisr/group3/digimon#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#canUseMove -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#canUseMove"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#digivolvesTo -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#digivolvesTo"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasAttack -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasAttack"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasAttribute -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasAttribute"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasDefense -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasDefense"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasHP -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasHP"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasIntelligence -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasIntelligence"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasMemory -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasMemory"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasMinAttack -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasMinAttack"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasMinDefense -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasMinDefense"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasMinHP -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasMinHP"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasMinIntelligence -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasMinIntelligence"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasMinLevel -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasMinLevel"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasMinSP -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasMinSP"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasMinSpeed -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasMinSpeed"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasMoveType -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasMoveType"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasPower -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasPower"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasRequirement -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasRequirement"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasSP -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasSP"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasSPCost -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasSPCost"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasSourceDigimon -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasSourceDigimon"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasSpeed -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasSpeed"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasStage -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasStage"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasSupportSkill -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasSupportSkill"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasTargetDigimon -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasTargetDigimon"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasType -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasType"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#learnsSkill -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/doisr/group3/digimon#learnsSkill"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Attribute -->
+
+
+    <Class rdf:about="https://w3id.org/doisr/group3/digimon#Attribute"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Digimon -->
+
+
+    <Class rdf:about="https://w3id.org/doisr/group3/digimon#Digimon"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#DigimonType -->
+
+
+    <Class rdf:about="https://w3id.org/doisr/group3/digimon#DigimonType"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Digivolution -->
+
+
+    <Class rdf:about="https://w3id.org/doisr/group3/digimon#Digivolution"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#DigivolutionRequirement -->
+
+
+    <Class rdf:about="https://w3id.org/doisr/group3/digimon#DigivolutionRequirement"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Move -->
+
+
+    <Class rdf:about="https://w3id.org/doisr/group3/digimon#Move"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#MoveType -->
+
+
+    <Class rdf:about="https://w3id.org/doisr/group3/digimon#MoveType"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Skill -->
+
+
+    <Class rdf:about="https://w3id.org/doisr/group3/digimon#Skill"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Stage -->
+
+
+    <Class rdf:about="https://w3id.org/doisr/group3/digimon#Stage"/>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#SupportSkill -->
+
+
+    <Class rdf:about="https://w3id.org/doisr/group3/digimon#SupportSkill"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Agumon -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Agumon">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:label>Agumon</rdfs:label>
+        <digimon:canUseMove rdf:resource="https://w3id.org/doisr/group3/digimon#PepperBreath"/>
+        <digimon:digivolvesTo rdf:resource="https://w3id.org/doisr/group3/digimon#Greymon"/>
+        <digimon:digivolvesTo rdf:resource="https://w3id.org/doisr/group3/digimon#NotADigimon"/>
+        <digimon:hasAttack rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">131</digimon:hasAttack>
+        <digimon:hasAttribute rdf:resource="https://w3id.org/doisr/group3/digimon#Fire"/>
+        <digimon:hasDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</digimon:hasDefense>
+        <digimon:hasHP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">530</digimon:hasHP>
+        <digimon:hasIntelligence rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</digimon:hasIntelligence>
+        <digimon:hasMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</digimon:hasMemory>
+        <digimon:hasSP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</digimon:hasSP>
+        <digimon:hasSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</digimon:hasSpeed>
+        <digimon:hasStage rdf:resource="https://w3id.org/doisr/group3/digimon#Rookie"/>
+        <digimon:hasType rdf:resource="https://w3id.org/doisr/group3/digimon#Vaccine"/>
+        <digimon:learnsSkill rdf:resource="https://w3id.org/doisr/group3/digimon#BabyFlame"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#AgumonToGreymon -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#AgumonToGreymon">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Digivolution"/>
+        <digimon:hasRequirement rdf:resource="https://w3id.org/doisr/group3/digimon#ReqAgumonToGreymon"/>
+        <digimon:hasSourceDigimon rdf:resource="https://w3id.org/doisr/group3/digimon#Agumon"/>
+        <digimon:hasTargetDigimon rdf:resource="https://w3id.org/doisr/group3/digimon#Greymon"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#AttackCharge -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#AttackCharge">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#SupportSkill"/>
+        <rdfs:label>Attack Charge</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#BabyFlame -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#BabyFlame">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Skill"/>
+        <rdfs:label>Baby Flame</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#BrokenMove -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#BrokenMove">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Move"/>
+        <digimon:hasMoveType rdf:resource="https://w3id.org/doisr/group3/digimon#Vaccine"/>
+        <digimon:hasPower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-20</digimon:hasPower>
+        <digimon:hasSPCost>many</digimon:hasSPCost>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Brokenmon -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Brokenmon">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:label></rdfs:label>
+        <digimon:canUseMove rdf:resource="https://w3id.org/doisr/group3/digimon#PepperBreath"/>
+        <digimon:hasDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-5</digimon:hasDefense>
+        <digimon:hasHP>high</digimon:hasHP>
+        <digimon:hasIntelligence rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</digimon:hasIntelligence>
+        <digimon:hasMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</digimon:hasMemory>
+        <digimon:hasSP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-10</digimon:hasSP>
+        <digimon:hasSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</digimon:hasSpeed>
+        <digimon:hasStage rdf:resource="https://w3id.org/doisr/group3/digimon#Rookie"/>
+        <digimon:hasType>Virus</digimon:hasType>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Champion -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Champion">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Stage"/>
+        <rdfs:label>Champion</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Data -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Data">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Attribute"/>
+        <rdfs:label>Data</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#EmptySkill -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#EmptySkill">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Skill"/>
+        <rdfs:label></rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Fire -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Fire">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Attribute"/>
+        <rdfs:label>Fire</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Greymon -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Greymon">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:label>Greymon</rdfs:label>
+        <digimon:canUseMove rdf:resource="https://w3id.org/doisr/group3/digimon#MegaFlame"/>
+        <digimon:hasAttack rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">170</digimon:hasAttack>
+        <digimon:hasAttribute rdf:resource="https://w3id.org/doisr/group3/digimon#Fire"/>
+        <digimon:hasDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">115</digimon:hasDefense>
+        <digimon:hasHP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</digimon:hasHP>
+        <digimon:hasIntelligence rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</digimon:hasIntelligence>
+        <digimon:hasMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</digimon:hasMemory>
+        <digimon:hasSP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</digimon:hasSP>
+        <digimon:hasSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</digimon:hasSpeed>
+        <digimon:hasStage rdf:resource="https://w3id.org/doisr/group3/digimon#Champion"/>
+        <digimon:hasSupportSkill rdf:resource="https://w3id.org/doisr/group3/digimon#AttackCharge"/>
+        <digimon:hasType rdf:resource="https://w3id.org/doisr/group3/digimon#Vaccine"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#InvalidRequirement -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#InvalidRequirement">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#DigivolutionRequirement"/>
+        <rdfs:comment>This property is intentionally not allowed by the closed shape.</rdfs:comment>
+        <rdfs:label>Invalid requirement</rdfs:label>
+        <digimon:hasMinAttack rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</digimon:hasMinAttack>
+        <digimon:hasMinAttack rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</digimon:hasMinAttack>
+        <digimon:hasMinDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</digimon:hasMinDefense>
+        <digimon:hasMinHP>a lot</digimon:hasMinHP>
+        <digimon:hasMinIntelligence rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</digimon:hasMinIntelligence>
+        <digimon:hasMinLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-5</digimon:hasMinLevel>
+        <digimon:hasMinSP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</digimon:hasMinSP>
+        <digimon:hasMinSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</digimon:hasMinSpeed>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#InvalidSelfDigivolution -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#InvalidSelfDigivolution">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Digivolution"/>
+        <digimon:hasRequirement rdf:resource="https://w3id.org/doisr/group3/digimon#InvalidRequirement"/>
+        <digimon:hasSourceDigimon rdf:resource="https://w3id.org/doisr/group3/digimon#Agumon"/>
+        <digimon:hasTargetDigimon rdf:resource="https://w3id.org/doisr/group3/digimon#Agumon"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Magic -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Magic">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#MoveType"/>
+        <rdfs:label>Magic</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#MegaFlame -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#MegaFlame">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Move"/>
+        <rdfs:label>Mega Flame</rdfs:label>
+        <digimon:hasMoveType rdf:resource="https://w3id.org/doisr/group3/digimon#Magic"/>
+        <digimon:hasPower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</digimon:hasPower>
+        <digimon:hasSPCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</digimon:hasSPCost>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#NoAbilitymon -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#NoAbilitymon">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:label>NoAbilitymon</rdfs:label>
+        <digimon:hasAttack rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</digimon:hasAttack>
+        <digimon:hasAttribute rdf:resource="https://w3id.org/doisr/group3/digimon#Data"/>
+        <digimon:hasDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</digimon:hasDefense>
+        <digimon:hasHP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</digimon:hasHP>
+        <digimon:hasIntelligence rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</digimon:hasIntelligence>
+        <digimon:hasMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</digimon:hasMemory>
+        <digimon:hasSP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</digimon:hasSP>
+        <digimon:hasSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</digimon:hasSpeed>
+        <digimon:hasStage rdf:resource="https://w3id.org/doisr/group3/digimon#Rookie"/>
+        <digimon:hasType rdf:resource="https://w3id.org/doisr/group3/digimon#Virus"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#NotADigimon -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#NotADigimon">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Move"/>
+        <rdfs:label>This resource is not a Digimon</rdfs:label>
+        <digimon:hasMoveType rdf:resource="https://w3id.org/doisr/group3/digimon#Physical"/>
+        <digimon:hasPower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</digimon:hasPower>
+        <digimon:hasSPCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</digimon:hasSPCost>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#OrphanRequirement -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#OrphanRequirement">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#DigivolutionRequirement"/>
+        <rdfs:label>Orphan requirement</rdfs:label>
+        <digimon:hasMinAttack rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</digimon:hasMinAttack>
+        <digimon:hasMinLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</digimon:hasMinLevel>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#PepperBreath -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#PepperBreath">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Move"/>
+        <rdfs:label>Pepper Breath</rdfs:label>
+        <digimon:hasMoveType rdf:resource="https://w3id.org/doisr/group3/digimon#Magic"/>
+        <digimon:hasPower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</digimon:hasPower>
+        <digimon:hasSPCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</digimon:hasSPCost>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Physical -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Physical">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#MoveType"/>
+        <rdfs:label>Physical</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#ReqAgumonToGreymon -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#ReqAgumonToGreymon">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#DigivolutionRequirement"/>
+        <rdfs:label>Requirements for Agumon to Greymon</rdfs:label>
+        <digimon:hasMinAttack rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</digimon:hasMinAttack>
+        <digimon:hasMinDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</digimon:hasMinDefense>
+        <digimon:hasMinHP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</digimon:hasMinHP>
+        <digimon:hasMinIntelligence rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</digimon:hasMinIntelligence>
+        <digimon:hasMinLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</digimon:hasMinLevel>
+        <digimon:hasMinSpeed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</digimon:hasMinSpeed>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Rookie -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Rookie">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Stage"/>
+        <rdfs:label>Rookie</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Vaccine -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Vaccine">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#DigimonType"/>
+        <rdfs:label>Vaccine</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Virus -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Virus">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#DigimonType"/>
+        <rdfs:label>Virus</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/doisr/group3/digimon#UnknownSource">
+        <digimon:digivolvesTo rdf:resource="https://w3id.org/doisr/group3/digimon#Greymon"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

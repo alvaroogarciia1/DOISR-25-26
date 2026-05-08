@@ -1,0 +1,399 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/doisr/group3/digimon#canUseMove
+<https://w3id.org/doisr/group3/digimon#canUseMove> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#digivolvesTo
+<https://w3id.org/doisr/group3/digimon#digivolvesTo> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasAttack
+<https://w3id.org/doisr/group3/digimon#hasAttack> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasAttribute
+<https://w3id.org/doisr/group3/digimon#hasAttribute> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasDefense
+<https://w3id.org/doisr/group3/digimon#hasDefense> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasHP
+<https://w3id.org/doisr/group3/digimon#hasHP> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasIntelligence
+<https://w3id.org/doisr/group3/digimon#hasIntelligence> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMemory
+<https://w3id.org/doisr/group3/digimon#hasMemory> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMinAttack
+<https://w3id.org/doisr/group3/digimon#hasMinAttack> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMinDefense
+<https://w3id.org/doisr/group3/digimon#hasMinDefense> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMinHP
+<https://w3id.org/doisr/group3/digimon#hasMinHP> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMinIntelligence
+<https://w3id.org/doisr/group3/digimon#hasMinIntelligence> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMinLevel
+<https://w3id.org/doisr/group3/digimon#hasMinLevel> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMinSP
+<https://w3id.org/doisr/group3/digimon#hasMinSP> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMinSpeed
+<https://w3id.org/doisr/group3/digimon#hasMinSpeed> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMoveType
+<https://w3id.org/doisr/group3/digimon#hasMoveType> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasPower
+<https://w3id.org/doisr/group3/digimon#hasPower> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasRequirement
+<https://w3id.org/doisr/group3/digimon#hasRequirement> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasSP
+<https://w3id.org/doisr/group3/digimon#hasSP> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasSPCost
+<https://w3id.org/doisr/group3/digimon#hasSPCost> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasSourceDigimon
+<https://w3id.org/doisr/group3/digimon#hasSourceDigimon> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasSpeed
+<https://w3id.org/doisr/group3/digimon#hasSpeed> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasStage
+<https://w3id.org/doisr/group3/digimon#hasStage> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasSupportSkill
+<https://w3id.org/doisr/group3/digimon#hasSupportSkill> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasTargetDigimon
+<https://w3id.org/doisr/group3/digimon#hasTargetDigimon> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasType
+<https://w3id.org/doisr/group3/digimon#hasType> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/doisr/group3/digimon#learnsSkill
+<https://w3id.org/doisr/group3/digimon#learnsSkill> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/doisr/group3/digimon#Attribute
+<https://w3id.org/doisr/group3/digimon#Attribute> rdf:type owl:Class .
+
+
+###  https://w3id.org/doisr/group3/digimon#Digimon
+<https://w3id.org/doisr/group3/digimon#Digimon> rdf:type owl:Class .
+
+
+###  https://w3id.org/doisr/group3/digimon#DigimonType
+<https://w3id.org/doisr/group3/digimon#DigimonType> rdf:type owl:Class .
+
+
+###  https://w3id.org/doisr/group3/digimon#Digivolution
+<https://w3id.org/doisr/group3/digimon#Digivolution> rdf:type owl:Class .
+
+
+###  https://w3id.org/doisr/group3/digimon#DigivolutionRequirement
+<https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> rdf:type owl:Class .
+
+
+###  https://w3id.org/doisr/group3/digimon#Move
+<https://w3id.org/doisr/group3/digimon#Move> rdf:type owl:Class .
+
+
+###  https://w3id.org/doisr/group3/digimon#MoveType
+<https://w3id.org/doisr/group3/digimon#MoveType> rdf:type owl:Class .
+
+
+###  https://w3id.org/doisr/group3/digimon#Skill
+<https://w3id.org/doisr/group3/digimon#Skill> rdf:type owl:Class .
+
+
+###  https://w3id.org/doisr/group3/digimon#Stage
+<https://w3id.org/doisr/group3/digimon#Stage> rdf:type owl:Class .
+
+
+###  https://w3id.org/doisr/group3/digimon#SupportSkill
+<https://w3id.org/doisr/group3/digimon#SupportSkill> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/doisr/group3/digimon#Agumon
+<https://w3id.org/doisr/group3/digimon#Agumon> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/doisr/group3/digimon#Digimon> ;
+                                               rdfs:label "Agumon" ;
+                                               <https://w3id.org/doisr/group3/digimon#canUseMove> <https://w3id.org/doisr/group3/digimon#PepperBreath> ;
+                                               <https://w3id.org/doisr/group3/digimon#digivolvesTo> <https://w3id.org/doisr/group3/digimon#Greymon> ,
+                                                                                                    <https://w3id.org/doisr/group3/digimon#NotADigimon> ;
+                                               <https://w3id.org/doisr/group3/digimon#hasAttack> 131 ;
+                                               <https://w3id.org/doisr/group3/digimon#hasAttribute> <https://w3id.org/doisr/group3/digimon#Fire> ;
+                                               <https://w3id.org/doisr/group3/digimon#hasDefense> 80 ;
+                                               <https://w3id.org/doisr/group3/digimon#hasHP> 530 ;
+                                               <https://w3id.org/doisr/group3/digimon#hasIntelligence> 70 ;
+                                               <https://w3id.org/doisr/group3/digimon#hasMemory> 5 ;
+                                               <https://w3id.org/doisr/group3/digimon#hasSP> 59 ;
+                                               <https://w3id.org/doisr/group3/digimon#hasSpeed> 85 ;
+                                               <https://w3id.org/doisr/group3/digimon#hasStage> <https://w3id.org/doisr/group3/digimon#Rookie> ;
+                                               <https://w3id.org/doisr/group3/digimon#hasType> <https://w3id.org/doisr/group3/digimon#Vaccine> ;
+                                               <https://w3id.org/doisr/group3/digimon#learnsSkill> <https://w3id.org/doisr/group3/digimon#BabyFlame> .
+
+
+###  https://w3id.org/doisr/group3/digimon#AgumonToGreymon
+<https://w3id.org/doisr/group3/digimon#AgumonToGreymon> rdf:type owl:NamedIndividual ,
+                                                                 <https://w3id.org/doisr/group3/digimon#Digivolution> ;
+                                                        <https://w3id.org/doisr/group3/digimon#hasRequirement> <https://w3id.org/doisr/group3/digimon#ReqAgumonToGreymon> ;
+                                                        <https://w3id.org/doisr/group3/digimon#hasSourceDigimon> <https://w3id.org/doisr/group3/digimon#Agumon> ;
+                                                        <https://w3id.org/doisr/group3/digimon#hasTargetDigimon> <https://w3id.org/doisr/group3/digimon#Greymon> .
+
+
+###  https://w3id.org/doisr/group3/digimon#AttackCharge
+<https://w3id.org/doisr/group3/digimon#AttackCharge> rdf:type owl:NamedIndividual ,
+                                                              <https://w3id.org/doisr/group3/digimon#SupportSkill> ;
+                                                     rdfs:label "Attack Charge" .
+
+
+###  https://w3id.org/doisr/group3/digimon#BabyFlame
+<https://w3id.org/doisr/group3/digimon#BabyFlame> rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/doisr/group3/digimon#Skill> ;
+                                                  rdfs:label "Baby Flame" .
+
+
+###  https://w3id.org/doisr/group3/digimon#BrokenMove
+<https://w3id.org/doisr/group3/digimon#BrokenMove> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/doisr/group3/digimon#Move> ;
+                                                   <https://w3id.org/doisr/group3/digimon#hasMoveType> <https://w3id.org/doisr/group3/digimon#Vaccine> ;
+                                                   <https://w3id.org/doisr/group3/digimon#hasPower> -20 ;
+                                                   <https://w3id.org/doisr/group3/digimon#hasSPCost> "many" .
+
+
+###  https://w3id.org/doisr/group3/digimon#Brokenmon
+<https://w3id.org/doisr/group3/digimon#Brokenmon> rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/doisr/group3/digimon#Digimon> ;
+                                                  rdfs:label "" ;
+                                                  <https://w3id.org/doisr/group3/digimon#canUseMove> <https://w3id.org/doisr/group3/digimon#PepperBreath> ;
+                                                  <https://w3id.org/doisr/group3/digimon#hasDefense> -5 ;
+                                                  <https://w3id.org/doisr/group3/digimon#hasHP> "high" ;
+                                                  <https://w3id.org/doisr/group3/digimon#hasIntelligence> 40 ;
+                                                  <https://w3id.org/doisr/group3/digimon#hasMemory> -1 ;
+                                                  <https://w3id.org/doisr/group3/digimon#hasSP> -10 ;
+                                                  <https://w3id.org/doisr/group3/digimon#hasSpeed> 30 ;
+                                                  <https://w3id.org/doisr/group3/digimon#hasStage> <https://w3id.org/doisr/group3/digimon#Rookie> ;
+                                                  <https://w3id.org/doisr/group3/digimon#hasType> "Virus" .
+
+
+###  https://w3id.org/doisr/group3/digimon#Champion
+<https://w3id.org/doisr/group3/digimon#Champion> rdf:type owl:NamedIndividual ,
+                                                          <https://w3id.org/doisr/group3/digimon#Stage> ;
+                                                 rdfs:label "Champion" .
+
+
+###  https://w3id.org/doisr/group3/digimon#Data
+<https://w3id.org/doisr/group3/digimon#Data> rdf:type owl:NamedIndividual ,
+                                                      <https://w3id.org/doisr/group3/digimon#Attribute> ;
+                                             rdfs:label "Data" .
+
+
+###  https://w3id.org/doisr/group3/digimon#EmptySkill
+<https://w3id.org/doisr/group3/digimon#EmptySkill> rdf:type owl:NamedIndividual ,
+                                                            <https://w3id.org/doisr/group3/digimon#Skill> ;
+                                                   rdfs:label "" .
+
+
+###  https://w3id.org/doisr/group3/digimon#Fire
+<https://w3id.org/doisr/group3/digimon#Fire> rdf:type owl:NamedIndividual ,
+                                                      <https://w3id.org/doisr/group3/digimon#Attribute> ;
+                                             rdfs:label "Fire" .
+
+
+###  https://w3id.org/doisr/group3/digimon#Greymon
+<https://w3id.org/doisr/group3/digimon#Greymon> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/doisr/group3/digimon#Digimon> ;
+                                                rdfs:label "Greymon" ;
+                                                <https://w3id.org/doisr/group3/digimon#canUseMove> <https://w3id.org/doisr/group3/digimon#MegaFlame> ;
+                                                <https://w3id.org/doisr/group3/digimon#hasAttack> 170 ;
+                                                <https://w3id.org/doisr/group3/digimon#hasAttribute> <https://w3id.org/doisr/group3/digimon#Fire> ;
+                                                <https://w3id.org/doisr/group3/digimon#hasDefense> 115 ;
+                                                <https://w3id.org/doisr/group3/digimon#hasHP> 700 ;
+                                                <https://w3id.org/doisr/group3/digimon#hasIntelligence> 85 ;
+                                                <https://w3id.org/doisr/group3/digimon#hasMemory> 8 ;
+                                                <https://w3id.org/doisr/group3/digimon#hasSP> 70 ;
+                                                <https://w3id.org/doisr/group3/digimon#hasSpeed> 95 ;
+                                                <https://w3id.org/doisr/group3/digimon#hasStage> <https://w3id.org/doisr/group3/digimon#Champion> ;
+                                                <https://w3id.org/doisr/group3/digimon#hasSupportSkill> <https://w3id.org/doisr/group3/digimon#AttackCharge> ;
+                                                <https://w3id.org/doisr/group3/digimon#hasType> <https://w3id.org/doisr/group3/digimon#Vaccine> .
+
+
+###  https://w3id.org/doisr/group3/digimon#InvalidRequirement
+<https://w3id.org/doisr/group3/digimon#InvalidRequirement> rdf:type owl:NamedIndividual ,
+                                                                    <https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> ;
+                                                           rdfs:comment "This property is intentionally not allowed by the closed shape." ;
+                                                           rdfs:label "Invalid requirement" ;
+                                                           <https://w3id.org/doisr/group3/digimon#hasMinAttack> 50 ,
+                                                                                                                60 ;
+                                                           <https://w3id.org/doisr/group3/digimon#hasMinDefense> 30 ;
+                                                           <https://w3id.org/doisr/group3/digimon#hasMinHP> "a lot" ;
+                                                           <https://w3id.org/doisr/group3/digimon#hasMinIntelligence> 20 ;
+                                                           <https://w3id.org/doisr/group3/digimon#hasMinLevel> -5 ;
+                                                           <https://w3id.org/doisr/group3/digimon#hasMinSP> -1 ;
+                                                           <https://w3id.org/doisr/group3/digimon#hasMinSpeed> 15 .
+
+
+###  https://w3id.org/doisr/group3/digimon#InvalidSelfDigivolution
+<https://w3id.org/doisr/group3/digimon#InvalidSelfDigivolution> rdf:type owl:NamedIndividual ,
+                                                                         <https://w3id.org/doisr/group3/digimon#Digivolution> ;
+                                                                <https://w3id.org/doisr/group3/digimon#hasRequirement> <https://w3id.org/doisr/group3/digimon#InvalidRequirement> ;
+                                                                <https://w3id.org/doisr/group3/digimon#hasSourceDigimon> <https://w3id.org/doisr/group3/digimon#Agumon> ;
+                                                                <https://w3id.org/doisr/group3/digimon#hasTargetDigimon> <https://w3id.org/doisr/group3/digimon#Agumon> .
+
+
+###  https://w3id.org/doisr/group3/digimon#Magic
+<https://w3id.org/doisr/group3/digimon#Magic> rdf:type owl:NamedIndividual ,
+                                                       <https://w3id.org/doisr/group3/digimon#MoveType> ;
+                                              rdfs:label "Magic" .
+
+
+###  https://w3id.org/doisr/group3/digimon#MegaFlame
+<https://w3id.org/doisr/group3/digimon#MegaFlame> rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/doisr/group3/digimon#Move> ;
+                                                  rdfs:label "Mega Flame" ;
+                                                  <https://w3id.org/doisr/group3/digimon#hasMoveType> <https://w3id.org/doisr/group3/digimon#Magic> ;
+                                                  <https://w3id.org/doisr/group3/digimon#hasPower> 95 ;
+                                                  <https://w3id.org/doisr/group3/digimon#hasSPCost> 10 .
+
+
+###  https://w3id.org/doisr/group3/digimon#NoAbilitymon
+<https://w3id.org/doisr/group3/digimon#NoAbilitymon> rdf:type owl:NamedIndividual ,
+                                                              <https://w3id.org/doisr/group3/digimon#Digimon> ;
+                                                     rdfs:label "NoAbilitymon" ;
+                                                     <https://w3id.org/doisr/group3/digimon#hasAttack> 70 ;
+                                                     <https://w3id.org/doisr/group3/digimon#hasAttribute> <https://w3id.org/doisr/group3/digimon#Data> ;
+                                                     <https://w3id.org/doisr/group3/digimon#hasDefense> 65 ;
+                                                     <https://w3id.org/doisr/group3/digimon#hasHP> 400 ;
+                                                     <https://w3id.org/doisr/group3/digimon#hasIntelligence> 55 ;
+                                                     <https://w3id.org/doisr/group3/digimon#hasMemory> 4 ;
+                                                     <https://w3id.org/doisr/group3/digimon#hasSP> 45 ;
+                                                     <https://w3id.org/doisr/group3/digimon#hasSpeed> 60 ;
+                                                     <https://w3id.org/doisr/group3/digimon#hasStage> <https://w3id.org/doisr/group3/digimon#Rookie> ;
+                                                     <https://w3id.org/doisr/group3/digimon#hasType> <https://w3id.org/doisr/group3/digimon#Virus> .
+
+
+###  https://w3id.org/doisr/group3/digimon#NotADigimon
+<https://w3id.org/doisr/group3/digimon#NotADigimon> rdf:type owl:NamedIndividual ,
+                                                             <https://w3id.org/doisr/group3/digimon#Move> ;
+                                                    rdfs:label "This resource is not a Digimon" ;
+                                                    <https://w3id.org/doisr/group3/digimon#hasMoveType> <https://w3id.org/doisr/group3/digimon#Physical> ;
+                                                    <https://w3id.org/doisr/group3/digimon#hasPower> 10 ;
+                                                    <https://w3id.org/doisr/group3/digimon#hasSPCost> 1 .
+
+
+###  https://w3id.org/doisr/group3/digimon#OrphanRequirement
+<https://w3id.org/doisr/group3/digimon#OrphanRequirement> rdf:type owl:NamedIndividual ,
+                                                                   <https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> ;
+                                                          rdfs:label "Orphan requirement" ;
+                                                          <https://w3id.org/doisr/group3/digimon#hasMinAttack> 80 ;
+                                                          <https://w3id.org/doisr/group3/digimon#hasMinLevel> 20 .
+
+
+###  https://w3id.org/doisr/group3/digimon#PepperBreath
+<https://w3id.org/doisr/group3/digimon#PepperBreath> rdf:type owl:NamedIndividual ,
+                                                              <https://w3id.org/doisr/group3/digimon#Move> ;
+                                                     rdfs:label "Pepper Breath" ;
+                                                     <https://w3id.org/doisr/group3/digimon#hasMoveType> <https://w3id.org/doisr/group3/digimon#Magic> ;
+                                                     <https://w3id.org/doisr/group3/digimon#hasPower> 65 ;
+                                                     <https://w3id.org/doisr/group3/digimon#hasSPCost> 5 .
+
+
+###  https://w3id.org/doisr/group3/digimon#Physical
+<https://w3id.org/doisr/group3/digimon#Physical> rdf:type owl:NamedIndividual ,
+                                                          <https://w3id.org/doisr/group3/digimon#MoveType> ;
+                                                 rdfs:label "Physical" .
+
+
+###  https://w3id.org/doisr/group3/digimon#ReqAgumonToGreymon
+<https://w3id.org/doisr/group3/digimon#ReqAgumonToGreymon> rdf:type owl:NamedIndividual ,
+                                                                    <https://w3id.org/doisr/group3/digimon#DigivolutionRequirement> ;
+                                                           rdfs:label "Requirements for Agumon to Greymon" ;
+                                                           <https://w3id.org/doisr/group3/digimon#hasMinAttack> 55 ;
+                                                           <https://w3id.org/doisr/group3/digimon#hasMinDefense> 40 ;
+                                                           <https://w3id.org/doisr/group3/digimon#hasMinHP> 150 ;
+                                                           <https://w3id.org/doisr/group3/digimon#hasMinIntelligence> 20 ;
+                                                           <https://w3id.org/doisr/group3/digimon#hasMinLevel> 16 ;
+                                                           <https://w3id.org/doisr/group3/digimon#hasMinSpeed> 25 .
+
+
+###  https://w3id.org/doisr/group3/digimon#Rookie
+<https://w3id.org/doisr/group3/digimon#Rookie> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/doisr/group3/digimon#Stage> ;
+                                               rdfs:label "Rookie" .
+
+
+###  https://w3id.org/doisr/group3/digimon#Vaccine
+<https://w3id.org/doisr/group3/digimon#Vaccine> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/doisr/group3/digimon#DigimonType> ;
+                                                rdfs:label "Vaccine" .
+
+
+###  https://w3id.org/doisr/group3/digimon#Virus
+<https://w3id.org/doisr/group3/digimon#Virus> rdf:type owl:NamedIndividual ,
+                                                       <https://w3id.org/doisr/group3/digimon#DigimonType> ;
+                                              rdfs:label "Virus" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://w3id.org/doisr/group3/digimon#UnknownSource> <https://w3id.org/doisr/group3/digimon#digivolvesTo> <https://w3id.org/doisr/group3/digimon#Greymon> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
