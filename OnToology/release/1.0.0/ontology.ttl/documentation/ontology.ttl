@@ -1,0 +1,329 @@
+@prefix : <https://w3id.org/doisr/group3/digimon#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/doisr/group3/digimon#> .
+
+<https://w3id.org/doisr/group3/digimon> rdf:type owl:Ontology ;
+                                         owl:versionIRI <https://w3id.org/doisr/group3/digimon/1.0.0> ;
+                                         <http://purl.org/dc/terms/contributor> <https://w3id.org/doisr/group3> ;
+                                         <http://purl.org/dc/terms/created> "2026-04-16"^^xsd:date ;
+                                         <http://purl.org/dc/terms/creator> <https://w3id.org/doisr/group3> ;
+                                         <http://purl.org/dc/terms/description> "Ontology for modeling Digimon, their stages, types, attributes, abilities and digivolution paths."@en ;
+                                         <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                         <http://purl.org/dc/terms/title> "Digimon Ontology"@en ;
+                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "dig" ;
+                                         <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                         owl:versionInfo "1.0.0" ;
+                                         <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/doisr/group3/digimon#canUseMove
+:canUseMove rdf:type owl:ObjectProperty ;
+            rdfs:domain :Digimon ;
+            rdfs:range :Move ;
+            rdfs:label "can use move" .
+
+
+###  https://w3id.org/doisr/group3/digimon#digivolvesTo
+:digivolvesTo rdf:type owl:ObjectProperty ;
+              rdfs:domain :Digimon ;
+              rdfs:range :Digimon ;
+              rdfs:label "digivolves to" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasAttribute
+:hasAttribute rdf:type owl:ObjectProperty ;
+              rdfs:domain :Digimon ;
+              rdfs:range :Attribute ;
+              rdfs:label "has attribute" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMoveType
+:hasMoveType rdf:type owl:ObjectProperty ;
+             rdfs:domain :Move ;
+             rdfs:range :MoveType ;
+             rdfs:label "has move type" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasRequirement
+:hasRequirement rdf:type owl:ObjectProperty ;
+                rdfs:domain :Digivolution ;
+                rdfs:range :DigivolutionRequirement ;
+                rdfs:label "has requirement" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasSourceDigimon
+:hasSourceDigimon rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Digivolution ;
+                  rdfs:range :Digimon ;
+                  rdfs:label "has source digimon" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasStage
+:hasStage rdf:type owl:ObjectProperty ;
+          rdfs:domain :Digimon ;
+          rdfs:range :Stage ;
+          rdfs:label "has stage" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasSupportSkill
+:hasSupportSkill rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Digimon ;
+                 rdfs:range :SupportSkill ;
+                 rdfs:label "has support skill" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasTargetDigimon
+:hasTargetDigimon rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Digivolution ;
+                  rdfs:range :Digimon ;
+                  rdfs:label "has target digimon" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasType
+:hasType rdf:type owl:ObjectProperty ;
+         rdfs:domain :Digimon ;
+         rdfs:range :DigimonType ;
+         rdfs:label "has type" .
+
+
+###  https://w3id.org/doisr/group3/digimon#learnsSkill
+:learnsSkill rdf:type owl:ObjectProperty ;
+             rdfs:domain :Digimon ;
+             rdfs:range :Skill ;
+             rdfs:label "learns skill" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/doisr/group3/digimon#hasAttack
+:hasAttack rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Digimon ;
+           rdfs:range xsd:integer ;
+           rdfs:label "has attack" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasDefense
+:hasDefense rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Digimon ;
+            rdfs:range xsd:integer ;
+            rdfs:label "has defense" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasHP
+:hasHP rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Digimon ;
+       rdfs:range xsd:integer ;
+       rdfs:label "has h p" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasIntelligence
+:hasIntelligence rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Digimon ;
+                 rdfs:range xsd:integer ;
+                 rdfs:label "has intelligence" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMemory
+:hasMemory rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Digimon ;
+           rdfs:range xsd:integer ;
+           rdfs:label "has memory" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMinAttack
+:hasMinAttack rdf:type owl:DatatypeProperty ;
+              rdfs:domain :DigivolutionRequirement ;
+              rdfs:range xsd:integer ;
+              rdfs:label "has min attack" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMinDefense
+:hasMinDefense rdf:type owl:DatatypeProperty ;
+               rdfs:domain :DigivolutionRequirement ;
+               rdfs:range xsd:integer ;
+               rdfs:label "has min defense" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMinHP
+:hasMinHP rdf:type owl:DatatypeProperty ;
+          rdfs:domain :DigivolutionRequirement ;
+          rdfs:range xsd:integer ;
+          rdfs:label "has min h p" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMinIntelligence
+:hasMinIntelligence rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :DigivolutionRequirement ;
+                    rdfs:range xsd:integer ;
+                    rdfs:label "has min intelligence" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMinLevel
+:hasMinLevel rdf:type owl:DatatypeProperty ;
+             rdfs:domain :DigivolutionRequirement ;
+             rdfs:range xsd:integer ;
+             rdfs:label "has min level" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMinSP
+:hasMinSP rdf:type owl:DatatypeProperty ;
+          rdfs:domain :DigivolutionRequirement ;
+          rdfs:range xsd:integer ;
+          rdfs:label "has min s p" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasMinSpeed
+:hasMinSpeed rdf:type owl:DatatypeProperty ;
+             rdfs:domain :DigivolutionRequirement ;
+             rdfs:range xsd:integer ;
+             rdfs:label "has min speed" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasPower
+:hasPower rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Move ;
+          rdfs:range xsd:integer ;
+          rdfs:label "has power" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasSP
+:hasSP rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Digimon ;
+       rdfs:range xsd:integer ;
+       rdfs:label "has s p" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasSPCost
+:hasSPCost rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Move ;
+           rdfs:range xsd:integer ;
+           rdfs:label "has s p cost" .
+
+
+###  https://w3id.org/doisr/group3/digimon#hasSpeed
+:hasSpeed rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Digimon ;
+          rdfs:range xsd:integer ;
+          rdfs:label "has speed" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/doisr/group3/digimon#Attribute
+:Attribute rdf:type owl:Class ;
+           rdfs:label "Attribute" .
+
+
+###  https://w3id.org/doisr/group3/digimon#Digimon
+:Digimon rdf:type owl:Class ;
+         rdfs:label "Digimon" .
+
+
+###  https://w3id.org/doisr/group3/digimon#DigimonType
+:DigimonType rdf:type owl:Class ;
+             rdfs:label "Digimon Type" .
+
+
+###  https://w3id.org/doisr/group3/digimon#Digivolution
+:Digivolution rdf:type owl:Class ;
+              rdfs:label "Digivolution" .
+
+
+###  https://w3id.org/doisr/group3/digimon#DigivolutionRequirement
+:DigivolutionRequirement rdf:type owl:Class ;
+                         rdfs:label "Digivolution Requirement" .
+
+
+###  https://w3id.org/doisr/group3/digimon#Move
+:Move rdf:type owl:Class ;
+      rdfs:label "Move" .
+
+
+###  https://w3id.org/doisr/group3/digimon#MoveType
+:MoveType rdf:type owl:Class ;
+          rdfs:label "Move Type" .
+
+
+###  https://w3id.org/doisr/group3/digimon#Skill
+:Skill rdf:type owl:Class ;
+       rdfs:label "Skill" .
+
+
+###  https://w3id.org/doisr/group3/digimon#Stage
+:Stage rdf:type owl:Class ;
+       rdfs:label "Stage" .
+
+
+###  https://w3id.org/doisr/group3/digimon#SupportSkill
+:SupportSkill rdf:type owl:Class ;
+              rdfs:label "Support Skill" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
