@@ -1,0 +1,121 @@
+{
+  "@context" : {
+    "hasSpeed" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasSpeed"
+    },
+    "hasMemory" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasMemory"
+    },
+    "hasIntelligence" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasIntelligence"
+    },
+    "SupportSkill" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#SupportSkill"
+    },
+    "hasAttack" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasAttack"
+    },
+    "hasMinLevel" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasMinLevel"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasPower" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasPower"
+    },
+    "hasHP" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasHP"
+    },
+    "hasSPCost" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasSPCost"
+    },
+    "hasMinIntelligence" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasMinIntelligence"
+    },
+    "hasMinAttack" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasMinAttack"
+    },
+    "Attribute" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#Attribute"
+    },
+    "hasTargetDigimon" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasTargetDigimon"
+    },
+    "DigivolutionRequirement" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#DigivolutionRequirement"
+    },
+    "Digimon" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#Digimon"
+    },
+    "canUseMove" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#canUseMove"
+    },
+    "hasMinHP" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasMinHP"
+    },
+    "hasSP" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasSP"
+    },
+    "hasDefense" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasDefense"
+    },
+    "hasSourceDigimon" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasSourceDigimon"
+    },
+    "hasSupportSkill" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasSupportSkill"
+    },
+    "Digivolution" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#Digivolution"
+    },
+    "hasMinSP" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasMinSP"
+    },
+    "VirusDigimon" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#VirusDigimon"
+    },
+    "Skill" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#Skill"
+    },
+    "hasRequirement" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasRequirement"
+    },
+    "hasMoveType" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasMoveType"
+    },
+    "learnsSkill" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#learnsSkill"
+    },
+    "MoveType" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#MoveType"
+    },
+    "hasAttribute" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasAttribute"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "digivolvesTo" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#digivolvesTo"
+    },
+    "VaccineDigimon" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#VaccineDigimon"
+    },
+    "hasMinSpeed" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasMinSpeed"
+    },
+    "Move" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#Move"
+    },
+    "hasMinDefense" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasMinDefense"
+    },
+    "hasStage" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasStage"
+    },
+    "Stage" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#Stage"
+    }
+  }
+}
