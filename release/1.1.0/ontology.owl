@@ -1,0 +1,529 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/doisr/group3/digimon#"
+     xml:base="https://w3id.org/doisr/group3/digimon"
+     xmlns:dig="https://w3id.org/doisr/group3/digimon#"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/doisr/group3/digimon">
+        <owl:versionIRI rdf:resource="https://w3id.org/doisr/group3/digimon/1.1.0"/>
+        <dcterms:contributor>Álvaro García-Caro Bartolomé</dcterms:contributor>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-16</dcterms:created>
+        <dcterms:creator>Ana García López de Asiain</dcterms:creator>
+        <dcterms:creator>Raúl Reyes Gómez</dcterms:creator>
+        <dcterms:creator>Álvaro García-Caro Bartolomé</dcterms:creator>
+        <dcterms:description xml:lang="en">Ontology for modeling Digimon, their stages, types, attributes, abilities and digivolution paths.</dcterms:description>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:title xml:lang="en">Digimon Ontology</dcterms:title>
+        <vann:preferredNamespacePrefix>dig</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/doisr/group3/digimon#"/>
+        <owl:backwardCompatibleWith rdf:resource="https://w3id.org/doisr/group3/digimon/1.0.0"/>
+        <owl:priorVersion rdf:resource="https://w3id.org/doisr/group3/digimon/1.0.0"/>
+        <owl:versionInfo>1.1.0</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#backwardCompatibleWith -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#backwardCompatibleWith"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#priorVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#priorVersion"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#canUseMove -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/doisr/group3/digimon#canUseMove">
+        <rdfs:domain rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:range rdf:resource="https://w3id.org/doisr/group3/digimon#Move"/>
+        <rdfs:label>can use move</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#digivolvesTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/doisr/group3/digimon#digivolvesTo">
+        <rdfs:domain rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:range rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:label>digivolves to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasAttribute -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasAttribute">
+        <rdfs:domain rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:range rdf:resource="https://w3id.org/doisr/group3/digimon#Attribute"/>
+        <rdfs:label>has attribute</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasMoveType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasMoveType">
+        <rdfs:domain rdf:resource="https://w3id.org/doisr/group3/digimon#Move"/>
+        <rdfs:range rdf:resource="https://w3id.org/doisr/group3/digimon#MoveType"/>
+        <rdfs:label>has move type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasRequirement -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasRequirement">
+        <rdfs:domain rdf:resource="https://w3id.org/doisr/group3/digimon#Digivolution"/>
+        <rdfs:range rdf:resource="https://w3id.org/doisr/group3/digimon#DigivolutionRequirement"/>
+        <rdfs:label>has requirement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasSourceDigimon -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasSourceDigimon">
+        <rdfs:domain rdf:resource="https://w3id.org/doisr/group3/digimon#Digivolution"/>
+        <rdfs:range rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:label>has source digimon</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasStage -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasStage">
+        <rdfs:domain rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:range rdf:resource="https://w3id.org/doisr/group3/digimon#Stage"/>
+        <rdfs:label>has stage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasSupportSkill -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasSupportSkill">
+        <rdfs:domain rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:range rdf:resource="https://w3id.org/doisr/group3/digimon#SupportSkill"/>
+        <rdfs:label>has support skill</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasTargetDigimon -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasTargetDigimon">
+        <rdfs:domain rdf:resource="https://w3id.org/doisr/group3/digimon#Digivolution"/>
+        <rdfs:range rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:label>has target digimon</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#learnsSkill -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/doisr/group3/digimon#learnsSkill">
+        <rdfs:domain rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:range rdf:resource="https://w3id.org/doisr/group3/digimon#Skill"/>
+        <rdfs:label>learns skill</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasAttack -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasAttack">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has attack</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasDefense -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasDefense">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has defense</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasHP -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasHP">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has h p</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasIntelligence -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasIntelligence">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has intelligence</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasMemory -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasMemory">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has memory</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasSP -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasSP">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has s p</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#hasSpeed -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/doisr/group3/digimon#hasSpeed">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has speed</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Attribute -->
+
+    <owl:Class rdf:about="https://w3id.org/doisr/group3/digimon#Attribute">
+        <rdfs:label>Attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#DataDigimon -->
+
+    <owl:Class rdf:about="https://w3id.org/doisr/group3/digimon#DataDigimon">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:label>Data Digimon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Digimon -->
+
+    <owl:Class rdf:about="https://w3id.org/doisr/group3/digimon#Digimon">
+        <rdfs:label>Digimon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Digivolution -->
+
+    <owl:Class rdf:about="https://w3id.org/doisr/group3/digimon#Digivolution">
+        <rdfs:label>Digivolution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#DigivolutionRequirement -->
+
+    <owl:Class rdf:about="https://w3id.org/doisr/group3/digimon#DigivolutionRequirement">
+        <rdfs:label>Digivolution Requirement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#FreeDigimon -->
+
+    <owl:Class rdf:about="https://w3id.org/doisr/group3/digimon#FreeDigimon">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:label>Free Digimon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Move -->
+
+    <owl:Class rdf:about="https://w3id.org/doisr/group3/digimon#Move">
+        <rdfs:label>Move</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#MoveType -->
+
+    <owl:Class rdf:about="https://w3id.org/doisr/group3/digimon#MoveType">
+        <rdfs:label>Move Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Skill -->
+
+    <owl:Class rdf:about="https://w3id.org/doisr/group3/digimon#Skill">
+        <rdfs:label>Skill</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Stage -->
+
+    <owl:Class rdf:about="https://w3id.org/doisr/group3/digimon#Stage">
+        <rdfs:label>Stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#SupportSkill -->
+
+    <owl:Class rdf:about="https://w3id.org/doisr/group3/digimon#SupportSkill">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/doisr/group3/digimon#Skill"/>
+        <rdfs:label>Support Skill</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#VaccineDigimon -->
+
+    <owl:Class rdf:about="https://w3id.org/doisr/group3/digimon#VaccineDigimon">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:label>Vaccine Digimon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#VirusDigimon -->
+
+    <owl:Class rdf:about="https://w3id.org/doisr/group3/digimon#VirusDigimon">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <rdfs:label>Virus Digimon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Dark -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Dark">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Attribute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Earth -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Earth">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Attribute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Electric -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Electric">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Attribute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Fire -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Fire">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Attribute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Light -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Light">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Attribute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Neutral -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Neutral">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Attribute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Plant -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Plant">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Attribute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Water -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Water">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Attribute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon#Wind -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon#Wind">
+        <rdf:type rdf:resource="https://w3id.org/doisr/group3/digimon#Attribute"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
