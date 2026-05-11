@@ -1,4 +1,21 @@
 <h2 id="desc" class="list">Digimon Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
 
+<span class="markdown">
+The ontology models Digimon entities and their relationships through a hierarchy of classes and properties.
+
+The central concept of the ontology is the class <b>Digimon</b>, which is specialized into subclasses representing the different Digimon types:
+<b>VirusDigimon</b>, <b>VaccineDigimon</b>, <b>DataDigimon</b> and <b>FreeDigimon</b>.
+
+Each Digimon is linked to:
+- a Stage,
+- an Attribute,
+- one or more Moves,
+- Skills and Support Skills,
+- and possible Digivolution relationships.
+
+Digivolutions are modeled as n-ary relations through the class <b>Digivolution</b>, which connects source Digimon, target Digimon and Digivolution Requirements.
+
+The ontology also models numerical Digimon statistics such as HP, SP, attack, defense, intelligence, speed and memory through datatype properties.
+
+The ontology was validated using SHACL constraints and evaluated using OOPS! and Widoco tools.
+</span>
