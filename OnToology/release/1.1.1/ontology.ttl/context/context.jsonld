@@ -1,0 +1,168 @@
+{
+  "@context" : {
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI"
+    },
+    "hasSpeed" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasSpeed",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasMemory" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasMemory",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "hasIntelligence" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasIntelligence",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "bibliographicCitation" : {
+      "@id" : "http://purl.org/dc/terms/bibliographicCitation"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "SupportSkill" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#SupportSkill"
+    },
+    "hasAttack" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasAttack",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "DataDigimon" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#DataDigimon"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasHP" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasHP",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Attribute" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#Attribute"
+    },
+    "hasTargetDigimon" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasTargetDigimon",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "DigivolutionRequirement" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#DigivolutionRequirement"
+    },
+    "Digimon" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#Digimon"
+    },
+    "canUseMove" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#canUseMove",
+      "@type" : "@id"
+    },
+    "hasSP" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasSP",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "createdWith" : {
+      "@id" : "https://w3id.org/mod#createdWith"
+    },
+    "hasDefense" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasDefense",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasSourceDigimon" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasSourceDigimon",
+      "@type" : "@id"
+    },
+    "backwardCompatibleWith" : {
+      "@id" : "http://www.w3.org/2002/07/owl#backwardCompatibleWith"
+    },
+    "hasSupportSkill" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasSupportSkill",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Digivolution" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#Digivolution"
+    },
+    "VirusDigimon" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#VirusDigimon"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "Skill" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#Skill"
+    },
+    "hasRequirement" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasRequirement",
+      "@type" : "@id"
+    },
+    "hasMoveType" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasMoveType",
+      "@type" : "@id"
+    },
+    "learnsSkill" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#learnsSkill",
+      "@type" : "@id"
+    },
+    "MoveType" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#MoveType"
+    },
+    "hasAttribute" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasAttribute",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "digivolvesTo" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#digivolvesTo",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "VaccineDigimon" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#VaccineDigimon"
+    },
+    "FreeDigimon" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#FreeDigimon"
+    },
+    "Move" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#Move"
+    },
+    "hasStage" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#hasStage",
+      "@type" : "@id"
+    },
+    "Stage" : {
+      "@id" : "https://w3id.org/doisr/group3/digimon#Stage"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    }
+  }
+}

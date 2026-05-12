@@ -1,0 +1,579 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:shacl="http://www.w3.org/ns/shacl#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#class -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#class"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#closed -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#closed"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#datatype -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#datatype"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#disjoint -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#disjoint"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#ignoredProperties -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#ignoredProperties"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#inversePath -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#inversePath"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#maxCount -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#maxCount"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#message -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#message"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#minCount -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#minCount"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#minInclusive -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#minInclusive"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#minLength -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#minLength"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#node -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#node"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#nodeKind -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#nodeKind"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#or -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#or"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#path -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#path"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#property -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#property"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#targetClass -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#targetClass"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#targetSubjectsOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#targetSubjectsOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#NodeShape -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/shacl#NodeShape"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon/shapes#AbilityLabelShape -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon/shapes#AbilityLabelShape">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:comment xml:lang="en">Checks that skills and support skills have human-readable names.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ability label shape</rdfs:label>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:nodeID="genid2"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/doisr/group3/digimon#Skill"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/doisr/group3/digimon#SupportSkill"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid2">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Skill or SupportSkill must have exactly one non-empty rdfs:label.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:minLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minLength>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon/shapes#DigimonAbilityShape -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon/shapes#DigimonAbilityShape">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:comment xml:lang="en">Checks that Digimon participating in the integrated graph are connected to at least one relevant ability source: moves, skills or support skills.</rdfs:comment>
+        <rdfs:label xml:lang="en">Digimon ability shape</rdfs:label>
+        <shacl:message xml:lang="en">Each Digimon must be linked to at least one move, skill or support skill.</shacl:message>
+        <shacl:or>
+            <rdf:Description/>
+        </shacl:or>
+        <shacl:targetClass rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon/shapes#DigimonCoreShape -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon/shapes#DigimonCoreShape">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:comment xml:lang="en">Checks the minimum information required for each Digimon used in battle team planning and digivolution analysis.</rdfs:comment>
+        <rdfs:label xml:lang="en">Digimon core shape</rdfs:label>
+        <shacl:message xml:lang="en">Each Digimon must belong to one of the Digimon type subclasses: VaccineDigimon, VirusDigimon, DataDigimon or FreeDigimon.</shacl:message>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:or>
+            <rdf:Description/>
+        </shacl:or>
+        <shacl:property rdf:nodeID="genid5"/>
+        <shacl:property rdf:nodeID="genid6"/>
+        <shacl:property rdf:nodeID="genid7"/>
+        <shacl:property rdf:nodeID="genid8"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid5">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Digimon must have exactly one non-empty rdfs:label.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:minLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minLength>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid6">
+        <shacl:class rdf:resource="https://w3id.org/doisr/group3/digimon#Stage"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Digimon must have exactly one stage, and it must be an instance of dig:Stage.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasStage"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid7">
+        <shacl:class rdf:resource="https://w3id.org/doisr/group3/digimon#Attribute"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Digimon must have exactly one attribute, and it must be an instance of dig:Attribute.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasAttribute"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid8">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Digimon must have exactly one non-negative integer memory value.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</shacl:minInclusive>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasMemory"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon/shapes#DigimonStatsShape -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon/shapes#DigimonStatsShape">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:comment xml:lang="en">Checks the base level-50 statistics used for comparison and optimisation in the battle team planning use case.</rdfs:comment>
+        <rdfs:label xml:lang="en">Digimon statistics shape</rdfs:label>
+        <shacl:property rdf:nodeID="genid9"/>
+        <shacl:property rdf:nodeID="genid10"/>
+        <shacl:property rdf:nodeID="genid11"/>
+        <shacl:property rdf:nodeID="genid12"/>
+        <shacl:property rdf:nodeID="genid13"/>
+        <shacl:property rdf:nodeID="genid14"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid9">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Digimon must have exactly one non-negative integer HP value.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</shacl:minInclusive>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasHP"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid10">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Digimon must have exactly one non-negative integer SP value.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</shacl:minInclusive>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasSP"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid11">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Digimon must have exactly one non-negative integer attack value.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</shacl:minInclusive>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasAttack"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid12">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Digimon must have exactly one non-negative integer defense value.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</shacl:minInclusive>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasDefense"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid13">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Digimon must have exactly one non-negative integer intelligence value.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</shacl:minInclusive>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasIntelligence"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid14">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Digimon must have exactly one non-negative integer speed value.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</shacl:minInclusive>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasSpeed"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:comment xml:lang="en">Checks the numerical requirements needed to evaluate feasible digivolution paths.</rdfs:comment>
+        <rdfs:label xml:lang="en">Digivolution requirement shape</rdfs:label>
+        <shacl:closed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</shacl:closed>
+        <shacl:ignoredProperties>
+            <rdf:Description/>
+        </shacl:ignoredProperties>
+        <shacl:property rdf:nodeID="genid16"/>
+        <shacl:property rdf:nodeID="genid17"/>
+        <shacl:property rdf:nodeID="genid18"/>
+        <shacl:property rdf:nodeID="genid19"/>
+        <shacl:property rdf:nodeID="genid20"/>
+        <shacl:property rdf:nodeID="genid21"/>
+        <shacl:property rdf:nodeID="genid22"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/doisr/group3/digimon#DigivolutionRequirement"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid16">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Minimum level must be a non-negative integer when present.</shacl:message>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</shacl:minInclusive>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasMinLevel"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid17">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Minimum HP must be a non-negative integer when present.</shacl:message>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</shacl:minInclusive>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasMinHP"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid18">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Minimum SP must be a non-negative integer when present.</shacl:message>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</shacl:minInclusive>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasMinSP"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid19">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Minimum attack must be a non-negative integer when present.</shacl:message>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</shacl:minInclusive>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasMinAttack"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid20">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Minimum defense must be a non-negative integer when present.</shacl:message>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</shacl:minInclusive>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasMinDefense"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid21">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Minimum intelligence must be a non-negative integer when present.</shacl:message>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</shacl:minInclusive>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasMinIntelligence"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid22">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Minimum speed must be a non-negative integer when present.</shacl:message>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</shacl:minInclusive>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasMinSpeed"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon/shapes#DigivolutionShape -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon/shapes#DigivolutionShape">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:comment xml:lang="en">Checks that each Digivolution entity links a source Digimon, a target Digimon and the corresponding requirements.</rdfs:comment>
+        <rdfs:label xml:lang="en">Digivolution shape</rdfs:label>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:nodeID="genid23"/>
+        <shacl:property rdf:nodeID="genid24"/>
+        <shacl:property rdf:nodeID="genid25"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/doisr/group3/digimon#Digivolution"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid23">
+        <shacl:class rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <shacl:disjoint rdf:resource="https://w3id.org/doisr/group3/digimon#hasTargetDigimon"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Digivolution must have exactly one source Digimon, different from its target Digimon.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasSourceDigimon"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid24">
+        <shacl:class rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Digivolution must have exactly one target Digimon.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasTargetDigimon"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid25">
+        <shacl:class rdf:resource="https://w3id.org/doisr/group3/digimon#DigivolutionRequirement"/>
+        <shacl:message xml:lang="en">Each Digivolution must be linked to at least one valid DigivolutionRequirement.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:node rdf:resource="https://w3id.org/doisr/group3/digimon/shapes#DigivolutionRequirementShape"/>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasRequirement"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon/shapes#DigivolvesToShape -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon/shapes#DigivolvesToShape">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:comment xml:lang="en">Checks the direct shortcut relation used to query evolution chains.</rdfs:comment>
+        <rdfs:label xml:lang="en">Direct digivolvesTo shape</rdfs:label>
+        <shacl:class rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <shacl:property rdf:nodeID="genid26"/>
+        <shacl:targetSubjectsOf rdf:resource="https://w3id.org/doisr/group3/digimon#digivolvesTo"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid26">
+        <shacl:class rdf:resource="https://w3id.org/doisr/group3/digimon#Digimon"/>
+        <shacl:message xml:lang="en">Every subject and object of dig:digivolvesTo must be a Digimon.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#digivolvesTo"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon/shapes#MoveShape -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon/shapes#MoveShape">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:comment xml:lang="en">Checks the information needed to compare and use moves in battle-oriented queries.</rdfs:comment>
+        <rdfs:label xml:lang="en">Move shape</rdfs:label>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:nodeID="genid27"/>
+        <shacl:property rdf:nodeID="genid28"/>
+        <shacl:property rdf:nodeID="genid29"/>
+        <shacl:property rdf:nodeID="genid30"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/doisr/group3/digimon#Move"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid27">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Move must have exactly one non-empty rdfs:label.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:minLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minLength>
+        <shacl:path rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid28">
+        <shacl:class rdf:resource="https://w3id.org/doisr/group3/digimon#MoveType"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Move must have exactly one move type, and it must be an instance of dig:MoveType.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasMoveType"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid29">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Move must have exactly one non-negative integer power value.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</shacl:minInclusive>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasPower"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid30">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:maxCount>
+        <shacl:message xml:lang="en">Each Move must have exactly one non-negative integer SP cost value.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</shacl:minInclusive>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasSPCost"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/doisr/group3/digimon/shapes#RequirementUsageShape -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/doisr/group3/digimon/shapes#RequirementUsageShape">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:comment xml:lang="en">Checks that every DigivolutionRequirement is actually used by at least one Digivolution entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">Requirement usage shape</rdfs:label>
+        <shacl:property rdf:nodeID="genid31"/>
+        <shacl:targetClass rdf:resource="https://w3id.org/doisr/group3/digimon#DigivolutionRequirement"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid31">
+        <shacl:class rdf:resource="https://w3id.org/doisr/group3/digimon#Digivolution"/>
+        <shacl:message xml:lang="en">Each DigivolutionRequirement must be linked from at least one Digivolution through dig:hasRequirement.</shacl:message>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:path>
+            <rdf:Description>
+                <shacl:inversePath rdf:resource="https://w3id.org/doisr/group3/digimon#hasRequirement"/>
+            </rdf:Description>
+        </shacl:path>
+    </rdf:Description>
+    <rdf:Description>
+        <shacl:class rdf:resource="https://w3id.org/doisr/group3/digimon#VaccineDigimon"/>
+    </rdf:Description>
+    <rdf:Description>
+        <shacl:class rdf:resource="https://w3id.org/doisr/group3/digimon#VirusDigimon"/>
+    </rdf:Description>
+    <rdf:Description>
+        <shacl:property rdf:nodeID="genid36"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid36">
+        <shacl:class rdf:resource="https://w3id.org/doisr/group3/digimon#SupportSkill"/>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#hasSupportSkill"/>
+    </rdf:Description>
+    <rdf:Description>
+        <shacl:property rdf:nodeID="genid38"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid38">
+        <shacl:class rdf:resource="https://w3id.org/doisr/group3/digimon#Move"/>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#canUseMove"/>
+    </rdf:Description>
+    <rdf:Description>
+        <shacl:property rdf:nodeID="genid40"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid40">
+        <shacl:class rdf:resource="https://w3id.org/doisr/group3/digimon#Skill"/>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shacl:minCount>
+        <shacl:path rdf:resource="https://w3id.org/doisr/group3/digimon#learnsSkill"/>
+    </rdf:Description>
+    <rdf:Description>
+        <shacl:class rdf:resource="https://w3id.org/doisr/group3/digimon#DataDigimon"/>
+    </rdf:Description>
+    <rdf:Description>
+        <shacl:class rdf:resource="https://w3id.org/doisr/group3/digimon#FreeDigimon"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
